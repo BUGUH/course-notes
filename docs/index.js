@@ -9,7 +9,13 @@ function applyFilters() {
   const words = byId('q').value.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
   let count = 0;
   for (const row of rows) {
-    const visible = filters.every(name => !byId(name).value || row.dataset[name] === byId(name).value)
+    const visible = filters.every(name => {
+      const selected = byId(name).value;
+      if (!selected) return true;
+      return name === 'fmt'
+        ? (row.dataset.editions || row.dataset.fmt).split('|').includes(selected)
+        : row.dataset[name] === selected;
+    })
       && words.every(word => row.dataset.search.includes(word));
     row.hidden = !visible;
     if (visible) count++;

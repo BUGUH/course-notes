@@ -32,8 +32,10 @@ def make(docs, catalog, previews):
     count = len(catalog["items"])
     body = f'<section class="intro"><h1>课程笔记</h1><p>{len(groups)} 门课程及专题 · {count} 份笔记和作业</p></section>'
     formats = sorted({r["format"] for r in catalog["items"]})
+    if any("transcription" in r for r in catalog["items"]):
+        formats.append("已校对的 LaTeX 排版稿")
     types = list(dict.fromkeys(r["type"] for r in catalog["items"]))
-    body += f'''<div class="filters"><label>查找资料<input type="search" id="q" placeholder="题名、关键词或学期"></label><label>课程<select id="course"><option value="">全部课程</option>{options(groups)}</select></label><label>资料类型<select id="type"><option value="">全部类型</option>{options(sorted(types))}</select></label><label>下载格式<select id="fmt"><option value="">全部格式</option>{options(formats)}</select></label></div><p id="count" class="summary" aria-live="polite"></p><p id="empty" hidden>没有匹配的资料。</p>'''
+    body += f'''<div class="filters"><label>查找资料<input type="search" id="q" placeholder="题名、关键词或学期"></label><label>课程<select id="course"><option value="">全部课程</option>{options(groups)}</select></label><label>资料类型<select id="type"><option value="">全部类型</option>{options(sorted(types))}</select></label><label>格式或版本<select id="fmt"><option value="">全部格式</option>{options(formats)}</select></label></div><p id="count" class="summary" aria-live="polite"></p><p id="empty" hidden>没有匹配的资料。</p>'''
     articles = docs / "articles"
     articles.mkdir(exist_ok=True, parents=True)
     for course, rows in groups.items():
@@ -42,8 +44,13 @@ def make(docs, catalog, previews):
             rid, fmt = r["id"], r["format"]
             url = f'articles/{rid}.html'
             byline = " · ".join(v for v in [r["term"], r["type"]] if v)
-            key = " ".join((course, r["title"], byline,fmt)).lower()
-            body += f'<div class="entry" data-course="{esc(course)}" data-fmt="{esc(fmt)}" data-type="{esc(r["type"])}" data-search="{esc(key)}"><div><a class="title" href="{url}">{esc(r["title"])}</a><div class="sub">{esc(byline)}</div></div><span class="tags">{esc(fmt)} · {size(r["bytes"])}</span></div>'
+            editions=[fmt]
+            if rid in previews and "PDF" not in editions:editions.append("PDF")
+            if "transcription" in r:
+                editions.extend(v for v in ("LaTeX","PDF","已校对的 LaTeX 排版稿") if v not in editions)
+                byline+=" · 含校订排版稿"
+            key = " ".join((course, r["title"], byline,*editions)).lower()
+            body += f'<div class="entry" data-course="{esc(course)}" data-fmt="{esc(fmt)}" data-editions="{esc("|".join(editions))}" data-type="{esc(r["type"])}" data-search="{esc(key)}"><div><a class="title" href="{url}">{esc(r["title"])}</a><div class="sub">{esc(byline)}</div></div><span class="tags">{esc(fmt)} · {size(r["bytes"])}</span></div>'
             download = r["url"] if r["url"].startswith("https://") else "../" + r["url"]
             view = previews.get(rid) or (r["url"] if fmt=="PDF" and not r["url"].startswith("https://") else None)
             info = " · ".join(filter(None,[r["term"],f'{r["pages"]} 页' if r.get("pages") else "",f'{fmt} · {size(r["bytes"])}']))
@@ -61,7 +68,7 @@ def make(docs, catalog, previews):
             trans = r.get("transcription")
             if trans:
                 source = trans["source"]
-                item += f'<h2>LaTeX 排版版</h2><div class="actions"><a href="../{esc(trans["pdf"])}">阅读排版 PDF（{size(trans["pdf_bytes"])}）</a><a href="../{esc(source)}" download="{esc(r["title"])}.{esc(source.rsplit(".",1)[-1])}">下载排版源文件</a></div>'
+                item += f'<h2>LaTeX {esc(trans.get("label","校勘排版版"))}</h2><div class="actions"><a href="../{esc(trans["pdf"])}">阅读排版 PDF（{size(trans["pdf_bytes"])}）</a><a href="../{esc(source)}" download="{esc(r["title"])}.{esc(source.rsplit(".",1)[-1])}">下载排版源文件</a></div>'
             if view:
                 item += f'<object class="reader" aria-label="{esc(r["title"])} PDF" type="application/pdf" data="../{esc(view)}#view=FitH"><a href="../{esc(view)}">在 PDF 阅读器中打开</a></object>'
             elif fmt == "LaTeX":
