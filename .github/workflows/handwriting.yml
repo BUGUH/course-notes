@@ -1,0 +1,42 @@
+name: 手写课程资料转排
+run-name: 生成手写资料校对稿
+on:
+  workflow_dispatch:
+    inputs:
+      shards:
+        description: Page groups to process
+        required: true
+        type: string
+      review_public_key:
+        description: Public key for the private review output
+        required: true
+        type: string
+permissions:
+  contents: read
+jobs:
+  typeset:
+    if: ${{ github.event.repository.private == false && github.repository == 'BUGUH/course-notes' }}
+    name: pages-${{ matrix.shard }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 320
+    strategy:
+      max-parallel: 16
+      fail-fast: false
+      matrix:
+        shard: ${{ fromJSON(inputs.shards) }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: 准备免费标准运行环境
+        run: |
+          if ! command -v pdftoppm >/dev/null || ! /usr/bin/python3 -c 'import cryptography'; then
+            sudo apt-get update -qq
+            sudo apt-get install -y -q --no-install-recommends poppler-utils python3-cryptography
+          fi
+      - name: 将公开页面转成加密的校对稿
+        env:
+          SHARD: ${{ matrix.shard }}
+          REVIEW_PUBLIC_KEY: ${{ inputs.review_public_key }}
+        run: /usr/bin/python3 site-tools/transcribe-pages.py
+
