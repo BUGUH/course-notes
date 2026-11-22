@@ -98,7 +98,9 @@ def compile_preview(row, folder):
     return name
 
 def reference_previews(rows, folder, target):
-    seed = os.environ.get("PREVIEW_SEED", "")
+    published=CAT.get("reading_bundle",{})
+    seed = os.environ.get("PREVIEW_SEED") or published.get("name","")
+    if published and seed!=published["name"]:raise ValueError("Reading bundle differs from the catalogue")
     if seed and not re.fullmatch(r"reading-copies-[0-9a-f]{16}\.zip",seed):
         raise ValueError("Invalid reference bundle")
     archive = None
@@ -124,6 +126,7 @@ def reference_previews(rows, folder, target):
         if archive is None:
             with urllib.request.urlopen(BASE+CAT["tag"]+"/"+seed,timeout=120) as src,fallback.open("wb") as out:
                 shutil.copyfileobj(src,out)
+            if published and sha(fallback)!=published["sha"]:raise ValueError("Reading bundle digest mismatch")
             archive=zipfile.ZipFile(fallback)
         with archive.open(label) as src,dst.open("wb") as out:shutil.copyfileobj(src,out)
         if sha(dst)!=expected:raise ValueError("Reference digest mismatch "+label)
@@ -146,6 +149,8 @@ def run():
             for r, path in zip(missing,pool.map(lambda r:compile_preview(r,folder),missing)):
                 if path: previews[r["id"]]=path
     if any(r["id"] not in previews for r in tasks):raise RuntimeError("Could not reproduce every reading copy")
+    for row in tasks:
+        if sha(DOCS/previews[row["id"]])!=row["preview_sha256"]:raise ValueError("Reading copy differs from approved PDF")
     make(DOCS,CAT,previews)
     for row in CAT["items"]:
         if not row["url"].startswith("https://") and (not (DOCS/row["url"]).is_file() or sha(DOCS/row["url"])!=row["sha256"]):
