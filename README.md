@@ -1,3 +1,7 @@
-# Course notes
+# 课程笔记
 
-Selected graph theory notes and coursework.
+[浏览课程笔记与作业](https://buguh.github.io/course-notes/)
+
+可以按课程、题名和下载格式查找资料。每篇文章提供该份笔记或作业选定的精简文件。PDF 支持在线阅读，LaTeX 条目提供源文件，能在部署环境中成功编译并通过检查的条目也会显示 PDF 阅读版。
+
+`catalog.json` 记录条目、下载格式和文件校验值。较大的资料保存在本仓库的发布附件中。部署时会校验文件并生成网站。

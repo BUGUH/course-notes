@@ -1,24 +1,43 @@
 name: 发布课程笔记
 on:
   workflow_dispatch:
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+permissions: {}
 concurrency:
   group: pages
   cancel-in-progress: false
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
+        with:
+          persist-credentials: false
+      - name: 安装 LaTeX 阅读版编译工具
+        if: ${{ hashFiles('has-tex.txt') != '' }}
+        run: |
+          curl -fsSL --retry 3 https://github.com/tectonic-typesetting/tectonic/releases/download/tectonic%400.17.0/tectonic-0.17.0-x86_64-unknown-linux-musl.tar.gz -o "$RUNNER_TEMP/tectonic.tar.gz"
+          echo "8533d07f9ccbd7a65824b9e0459041bca34af1eb33daba48f59215593753a3b7  $RUNNER_TEMP/tectonic.tar.gz" | sha256sum --check
+          mkdir -p "$RUNNER_TEMP/tex-engine"
+          tar xzf "$RUNNER_TEMP/tectonic.tar.gz" -C "$RUNNER_TEMP/tex-engine"
+          find "$RUNNER_TEMP/tex-engine" -type f -name tectonic -printf '%h\n' >> "$GITHUB_PATH"
+          sudo apt-get -q update
+          sudo apt-get install -y -q --no-install-recommends latexmk texlive-xetex texlive-lang-chinese texlive-latex-extra texlive-science texlive-bibtex-extra biber poppler-utils fonts-noto-cjk fonts-noto-core fonts-liberation
+      - name: 校验课程资料并生成阅读页面
+        run: python3 site-tools/build_site.py
       - uses: actions/upload-pages-artifact@v3
         with:
           path: docs
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - id: deployment
         uses: actions/deploy-pages@v4
