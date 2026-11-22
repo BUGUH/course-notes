@@ -109,6 +109,7 @@ def reference_previews(rows, folder, target):
         dst=DOCS/rel
         expected=row["preview_sha256"]
         try:
+            if seed:raise OSError("Using verified reference bundle")
             uri="https://buguh.github.io/course-notes/"+rel
             with urllib.request.urlopen(uri,timeout=10) as src,dst.open("wb") as out:
                 shutil.copyfileobj(src,out)
@@ -135,12 +136,14 @@ def run():
         list(pool.map(restore,CAT["packs"]))
     previews = {r["id"]:r["existing_preview"] for r in CAT["items"] if r.get("existing_preview")}
     tasks = [r for r in CAT["items"] if r["format"]=="LaTeX" and r["id"] not in previews]
-    if shutil.which("latexmk") and tasks:
-        with tempfile.TemporaryDirectory() as folder, concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
-            for r, path in zip(tasks,pool.map(lambda r:compile_preview(r,folder),tasks)):
-                if path: previews[r["id"]]=path
     with tempfile.TemporaryDirectory() as folder:
         reference_previews(tasks,folder,previews)
+    missing = [r for r in tasks if r["id"] not in previews]
+    if shutil.which("latexmk") and missing:
+        with tempfile.TemporaryDirectory() as folder, concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
+            for r, path in zip(missing,pool.map(lambda r:compile_preview(r,folder),missing)):
+                if path: previews[r["id"]]=path
+    if any(r["id"] not in previews for r in tasks):raise RuntimeError("Could not reproduce every reading copy")
     make(DOCS,CAT,previews)
     for row in CAT["items"]:
         if not row["url"].startswith("https://") and (not (DOCS/row["url"]).is_file() or sha(DOCS/row["url"])!=row["sha256"]):
