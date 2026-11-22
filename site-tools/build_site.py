@@ -13,6 +13,7 @@ import urllib.request
 import zipfile
 
 from render_pages import make
+from pdf_library import install
 
 ROOT = Path(__file__).resolve().parent.parent
 DOCS = ROOT/"docs"
@@ -41,7 +42,7 @@ def restore(pack):
         with zipfile.ZipFile(archive) as z:
             if set(z.namelist())!=set(pack["members"]): raise ValueError("Unexpected bundle contents")
             for name, expected in pack["members"].items():
-                if not re.fullmatch(r"[0-9a-f]{64}\.(pdf|zip|tex|goodnotes)",name): raise ValueError("Invalid asset name")
+                if not re.fullmatch(r"[0-9a-f]{64}\.(pdf|zip|tex|goodnotes|html)",name): raise ValueError("Invalid asset name")
                 dst=DOCS/"files"/name
                 with z.open(name) as src,dst.open("wb") as out: shutil.copyfileobj(src,out)
                 if sha(dst)!=expected: raise ValueError("Asset digest mismatch")
@@ -130,6 +131,7 @@ def reference_previews(rows, folder, target):
     if archive: archive.close()
 
 def run():
+    install(DOCS)
     for directory in ("files","previews"):
         (DOCS/directory).mkdir(exist_ok=True,parents=True)
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:

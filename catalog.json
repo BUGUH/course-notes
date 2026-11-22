@@ -2,21 +2,6 @@
   "tag": "course-library-2026-11",
   "items": [
     {
-      "id": "15f90fa8d44f35e3ba50",
-      "title": "隐函数定理的证明和延伸",
-      "course": "数学分析",
-      "term": "",
-      "type": "专题报告",
-      "format": "LaTeX",
-      "ext": ".zip",
-      "bytes": 9926,
-      "pages": 8,
-      "sha256": "18f027ca6bccddf671c32392dd9be878595a9edf7daffed48379be27650e39c0",
-      "url": "files/18f027ca6bccddf671c32392dd9be878595a9edf7daffed48379be27650e39c0.zip",
-      "main": "main.tex",
-      "preview_sha256": "df2b8bf6d172ce07685951ffc7d4f75dab66513941a26504ae8d5790fc07e564"
-    },
-    {
       "id": "cff61faa3d04bcce4648",
       "title": "数学分析2习题课（选页）",
       "course": "数学分析（二）",
@@ -117,6 +102,28 @@
         18
       ],
       "original_pages": 18
+    },
+    {
+      "id": "049c3a44f7682de2f814",
+      "title": "待讨论的题目（选页）",
+      "course": "数学分析（二）",
+      "term": "大一",
+      "type": "习题",
+      "format": "LaTeX",
+      "ext": ".tex",
+      "bytes": 9242,
+      "pages": 3,
+      "sha256": "fb3d5a2f20ac1f1b11954483a42b21f5a76a8cd08c45b23a6d923d2a589818a3",
+      "original_pages": 7,
+      "source_pages": [
+        1,
+        5,
+        7
+      ],
+      "url": "files/fb3d5a2f20ac1f1b11954483a42b21f5a76a8cd08c45b23a6d923d2a589818a3.tex",
+      "corrected": true,
+      "main": "main.tex",
+      "preview_sha256": "4e8c852a22a4adccdeccd3a9c139705c12e91d8ce6ac9e9fe2e09f5c8a487d9b"
     },
     {
       "id": "a362499b7205b93508ce",
@@ -294,34 +301,6 @@
         27
       ],
       "url": "files/0ec4666dbc7fc8c3ac4e231711a796e4a52a4ef5e5d77a8c39ede16af11d60e9.pdf"
-    },
-    {
-      "id": "c7193220e426960775e7",
-      "title": "数论定理（选页）",
-      "course": "初等数论",
-      "term": "大一",
-      "type": "笔记",
-      "format": "PDF",
-      "ext": ".pdf",
-      "bytes": 3038839,
-      "pages": 12,
-      "sha256": "c68f105399253d81652e88c1ead6036269e207a2bb71dfb0f187b5dbb94aa3ea",
-      "original_pages": 44,
-      "source_pages": [
-        1,
-        7,
-        9,
-        11,
-        14,
-        19,
-        21,
-        24,
-        25,
-        27,
-        28,
-        29
-      ],
-      "url": "files/c68f105399253d81652e88c1ead6036269e207a2bb71dfb0f187b5dbb94aa3ea.pdf"
     },
     {
       "id": "17270f494fe218240b15",
@@ -1017,21 +996,6 @@
       "url": "files/811379d171f676f926a5e71120ded1dc7103139686e8b6ef4db5db8e7981c304.pdf"
     },
     {
-      "id": "7b07330a58ef0f7d582d",
-      "title": "以 Burgers 方程为例探究 DeepONet 的架构与性质",
-      "course": "微分方程数值解",
-      "term": "",
-      "type": "大作业",
-      "format": "LaTeX",
-      "ext": ".zip",
-      "bytes": 113311,
-      "pages": 11,
-      "sha256": "3bda75eb49e16729f747a8eca0cc35319ed8206daac6d0bf108b8160abb7ede4",
-      "url": "files/3bda75eb49e16729f747a8eca0cc35319ed8206daac6d0bf108b8160abb7ede4.zip",
-      "main": "main.tex",
-      "preview_sha256": "e8f792e2f5f6afe1c53ac3b2c79aaea14cacbc43ae9b6d59ea6cc3e0b4bf364f"
-    },
-    {
       "id": "d09b02d87900d40ba5b1",
       "title": "作业",
       "course": "微分方程数值解",
@@ -1193,6 +1157,72 @@
         13
       ],
       "url": "files/aa1e9dacee53925e2e146c3275eca6722db3e2bfbbf9d659d013407c110388cb.pdf"
+    },
+    {
+      "id": "1b4be49019fc8fc6abc9",
+      "title": "HW3（选页）",
+      "course": "科学计算",
+      "term": "大四上",
+      "type": "作业",
+      "format": "LaTeX",
+      "ext": ".zip",
+      "bytes": 68673,
+      "pages": 3,
+      "sha256": "3fcc4620a03d781341c04f848e4fc97f9e12f9d433173d405aced884b44a7211",
+      "original_pages": 6,
+      "source_pages": [
+        2,
+        3,
+        4
+      ],
+      "url": "files/3fcc4620a03d781341c04f848e4fc97f9e12f9d433173d405aced884b44a7211.zip",
+      "corrected": true,
+      "main": "1b4be49019fc8fc6abc9.tex",
+      "preview_sha256": "d80ee2ddfe0aeda20c347e344fb368e072a3947ed86e2d3e1516fd2b0745256a"
+    },
+    {
+      "id": "aef3eb03334733878679",
+      "title": "HW5（选页）",
+      "course": "科学计算",
+      "term": "大四上",
+      "type": "作业",
+      "format": "LaTeX",
+      "ext": ".zip",
+      "bytes": 2563,
+      "pages": 3,
+      "sha256": "d0d95e6f0bdd88a15148d3788b69767f81d456ccb3ed3ba7ea1c7c72ff824e0d",
+      "original_pages": 5,
+      "source_pages": [
+        1,
+        2,
+        4
+      ],
+      "url": "files/d0d95e6f0bdd88a15148d3788b69767f81d456ccb3ed3ba7ea1c7c72ff824e0d.zip",
+      "corrected": true,
+      "main": "main.tex",
+      "preview_sha256": "2b50ab0bcd7658884c2ca2c1fdf3590761fa560d161bc486343a278fe79e37b5"
+    },
+    {
+      "id": "f45e22a9a12d0128d551",
+      "title": "HW7（选页）",
+      "course": "科学计算",
+      "term": "大四上",
+      "type": "作业",
+      "format": "LaTeX",
+      "ext": ".zip",
+      "bytes": 332904,
+      "pages": 3,
+      "sha256": "c821ab43b80c5a31c33fd992c6c67e5e445907f6593acff39bce7236ec923c34",
+      "original_pages": 5,
+      "source_pages": [
+        1,
+        2,
+        3
+      ],
+      "url": "files/c821ab43b80c5a31c33fd992c6c67e5e445907f6593acff39bce7236ec923c34.zip",
+      "corrected": true,
+      "main": "f45e22a9a12d0128d551.tex",
+      "preview_sha256": "d8a64e020eba48d41cd881d9d26cd23ea7796f059bbe13c1e8f1e3ec907347ed"
     },
     {
       "id": "5ed524f8f5393903afe7",
@@ -1383,21 +1413,6 @@
       "url": "files/edd921db058672b1372392faa4928aa297840e8ba841f5272548db776bccb991.pdf"
     },
     {
-      "id": "81f0343b4bde4174c3ab",
-      "title": "初始化与学习率驱动的隐式正则化机制",
-      "course": "最优化方法",
-      "term": "",
-      "type": "大作业",
-      "format": "LaTeX",
-      "ext": ".zip",
-      "bytes": 4417569,
-      "pages": 30,
-      "sha256": "19b40013df2d439daf9ea6f37e085a23a160d715f6052b9c5b75a9b8ffad3136",
-      "url": "files/19b40013df2d439daf9ea6f37e085a23a160d715f6052b9c5b75a9b8ffad3136.zip",
-      "main": "main.tex",
-      "preview_sha256": "52769238b475016f39622be4ce64d1f763a620a4e8243c00cf8c94fe09fbe4cf"
-    },
-    {
       "id": "ffc4611e430da9b38e6f",
       "title": "强化学习暑校作业 1：近似方法",
       "course": "强化学习",
@@ -1407,10 +1422,11 @@
       "ext": ".zip",
       "bytes": 2537493,
       "pages": 17,
-      "sha256": "4dd342925d55ac9ec4d4671315844d47db01b1ea9add35915d98f12c196d7e70",
-      "url": "files/4dd342925d55ac9ec4d4671315844d47db01b1ea9add35915d98f12c196d7e70.zip",
+      "sha256": "6eb2f5eafdbf464ce31117739eba49f414649cf2855d3864ed4cb8ba426997ed",
+      "url": "files/6eb2f5eafdbf464ce31117739eba49f414649cf2855d3864ed4cb8ba426997ed.zip",
       "main": "main.tex",
-      "preview_sha256": "f2671b1910707104e6a7eae5d6891f00ff13ae8df2c6786414317d4f0d3b8357"
+      "preview_sha256": "5ee2a863c402fd8be408a9f27e0fd9b63f71adf709341f17200d37d0ded89d95",
+      "corrected": true
     },
     {
       "id": "73b57f8690d419d9b502",
@@ -1420,12 +1436,14 @@
       "type": "作业",
       "format": "LaTeX",
       "ext": ".zip",
-      "bytes": 8177,
+      "bytes": 8166,
       "pages": 12,
-      "sha256": "68a230523fdcaac1fd0f9aed4c6a94e708a277b709f2c623a22b74938691c4e6",
-      "url": "files/68a230523fdcaac1fd0f9aed4c6a94e708a277b709f2c623a22b74938691c4e6.zip",
+      "sha256": "a248b857a14683deb08cace67b29f4f0d443b8aa50033627fc8cb317dab5e986",
+      "url": "files/a248b857a14683deb08cace67b29f4f0d443b8aa50033627fc8cb317dab5e986.zip",
       "main": "main.tex",
-      "preview_sha256": "d5185590f52bce7c591875293147461126f0bd94b9e6de13e00648f524572da3"
+      "preview_sha256": "89de4e1f8e634d80950eea06a7ce04b2620dba76f46728417c309b9c960c5eeb",
+      "corrected": true,
+      "web_reading": "files/004d0239a04a8350b9f3584c54d5df5c4c8156d9004b6e399d45b833887465e2.html"
     },
     {
       "id": "b5e55550c89503f21a86",
@@ -1440,74 +1458,25 @@
       "sha256": "4cfdf65cf087633dd812e5d05bd0f85a1375dc97507d58db95c2cba719b808d7",
       "url": "files/4cfdf65cf087633dd812e5d05bd0f85a1375dc97507d58db95c2cba719b808d7.zip",
       "main": "main.tex",
-      "preview_sha256": "b5f34d6244101962916158125dcbec2fab6ad5f141ec08f7ab84e1ae2c52ed14"
+      "preview_sha256": "b5f34d6244101962916158125dcbec2fab6ad5f141ec08f7ab84e1ae2c52ed14",
+      "web_reading": "files/769c94c489a93e73f1215b90a6d96bd1a2710973e90a7e60d540e3b03cd2188d.html"
     },
     {
-      "id": "195bf4ceef621fd2d0db",
-      "title": "深度学习组：卷积神经网络部分大报告",
+      "id": "89e425c2ecf5d047f3b4",
+      "title": "作业1",
       "course": "专业研讨课（二）",
-      "term": "",
-      "type": "大作业",
+      "term": "大二下",
+      "type": "作业",
       "format": "LaTeX",
-      "ext": ".zip",
-      "bytes": 2065325,
-      "pages": 13,
-      "sha256": "02bec0101d08273765f200edcadc6902eadcba7038e08b5cdfcfabf5b1f6a5d6",
-      "url": "files/02bec0101d08273765f200edcadc6902eadcba7038e08b5cdfcfabf5b1f6a5d6.zip",
+      "ext": ".tex",
+      "bytes": 5182,
+      "pages": 3,
+      "sha256": "1a4634fbc0dc8f9d4f1f9c87f377c77ed5aecfca8ec204b3a82cd0708e73d68d",
+      "url": "files/1a4634fbc0dc8f9d4f1f9c87f377c77ed5aecfca8ec204b3a82cd0708e73d68d.tex",
+      "corrected": true,
       "main": "main.tex",
-      "preview_sha256": "f2da1360b576b77dcfc32bceef12f98674629339e12bef40ddbab26ae279f0a6"
-    },
-    {
-      "id": "cb08df98fe79de51803a",
-      "title": "数学建模专题：Ising 模型与相变",
-      "course": "专业研讨课（四）",
-      "term": "",
-      "type": "大作业",
-      "format": "LaTeX",
-      "ext": ".zip",
-      "bytes": 919657,
-      "pages": 23,
-      "sha256": "b0e00c51be5ce10249ebe9ff28bce624e6099048b34656503f70dfdf0d2b68a6",
-      "url": "files/b0e00c51be5ce10249ebe9ff28bce624e6099048b34656503f70dfdf0d2b68a6.zip",
-      "main": "main.tex",
-      "preview_sha256": "7b828b94ae6e67dcd005af90faed810db4f97fd16f1b6af21e23d14edfd83038"
-    },
-    {
-      "id": "a4bf5dbda7a6db6a561e",
-      "title": "Ising 模型与平均场理论",
-      "course": "专业研讨课（四）",
-      "term": "",
-      "type": "汇报",
-      "format": "PDF",
-      "ext": ".pdf",
-      "bytes": 524321,
-      "pages": 21,
-      "sha256": "63abeb8b51555bf6d53548d8e5151631d2cc0cbf92681d892a369a7808dc2df4",
-      "url": "files/63abeb8b51555bf6d53548d8e5151631d2cc0cbf92681d892a369a7808dc2df4.pdf",
-      "source_pages": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20,
-        21
-      ],
-      "original_pages": 22
+      "preview_sha256": "fc81edd479130691553b55f89b9df8a6dd6039e0d06b59589864000ffb7a3725",
+      "web_reading": "files/05e519049d3a9a37b32ca80f0c31f9d722a355fe7da99b30f015025b7c2e6f0e.html"
     },
     {
       "id": "822ead88a8c91c55e7d1",
@@ -1621,15 +1590,14 @@
       }
     },
     {
-      "name": "notes-91a8dc925a36712b.zip",
-      "sha": "91a8dc925a36712bfb6a87aa4ea9224319e3dab4371a8eb39bc81cd30935b6e9",
+      "name": "notes-0a52b7aa0da49b39.zip",
+      "sha": "0a52b7aa0da49b396f8e17047849f29bb7ab45edb923f1dce5266001d50e8156",
       "members": {
         "d1c5c25ad6cdb62844af7a113582103732fb089add74c29044bbd2414fdff9a0.pdf": "d1c5c25ad6cdb62844af7a113582103732fb089add74c29044bbd2414fdff9a0",
         "0ec4666dbc7fc8c3ac4e231711a796e4a52a4ef5e5d77a8c39ede16af11d60e9.pdf": "0ec4666dbc7fc8c3ac4e231711a796e4a52a4ef5e5d77a8c39ede16af11d60e9",
         "f056d9ab7d658176ab4e856e108170aeb1494d0ca29fddf0a4570875906d09ce.pdf": "f056d9ab7d658176ab4e856e108170aeb1494d0ca29fddf0a4570875906d09ce",
         "aa1e9dacee53925e2e146c3275eca6722db3e2bfbbf9d659d013407c110388cb.pdf": "aa1e9dacee53925e2e146c3275eca6722db3e2bfbbf9d659d013407c110388cb",
         "d4292efda3fda2073299a6531685fe22fc62c2efd3629222da761737ad90f2b1.pdf": "d4292efda3fda2073299a6531685fe22fc62c2efd3629222da761737ad90f2b1",
-        "c68f105399253d81652e88c1ead6036269e207a2bb71dfb0f187b5dbb94aa3ea.pdf": "c68f105399253d81652e88c1ead6036269e207a2bb71dfb0f187b5dbb94aa3ea",
         "4d0ef23e86270373053ae372f9d9d7a6eb68563a11e7367600e206982ee60050.pdf": "4d0ef23e86270373053ae372f9d9d7a6eb68563a11e7367600e206982ee60050",
         "31e44eb2af4be2c00b40a4251169b06c8ef531e6862a53b932fa299b0e267317.pdf": "31e44eb2af4be2c00b40a4251169b06c8ef531e6862a53b932fa299b0e267317",
         "fac060a31a7452f9d4d89906de81d0dc100127e21ca483bf8eb2e2fe0973c1d3.pdf": "fac060a31a7452f9d4d89906de81d0dc100127e21ca483bf8eb2e2fe0973c1d3",
@@ -1662,21 +1630,29 @@
       }
     },
     {
-      "name": "notes-522ab21896872a7d.zip",
-      "sha": "522ab21896872a7d044170bb097bf56d70bd55f032ef5efeebc20e600ec20d62",
+      "name": "notes-447be1f8972403b0.zip",
+      "sha": "447be1f8972403b000c4be0c1b927e4add09167b16837bbd491d42d9f0c37ebf",
       "members": {
-        "18f027ca6bccddf671c32392dd9be878595a9edf7daffed48379be27650e39c0.zip": "18f027ca6bccddf671c32392dd9be878595a9edf7daffed48379be27650e39c0",
         "27ba3c7b04c8d4b2e197bcc9df2f626127a8fb20c915ff96e25acec4dc757229.pdf": "27ba3c7b04c8d4b2e197bcc9df2f626127a8fb20c915ff96e25acec4dc757229",
-        "3bda75eb49e16729f747a8eca0cc35319ed8206daac6d0bf108b8160abb7ede4.zip": "3bda75eb49e16729f747a8eca0cc35319ed8206daac6d0bf108b8160abb7ede4",
+        "fb3d5a2f20ac1f1b11954483a42b21f5a76a8cd08c45b23a6d923d2a589818a3.tex": "fb3d5a2f20ac1f1b11954483a42b21f5a76a8cd08c45b23a6d923d2a589818a3",
         "04b30f712a6c4f9e8a2988ab566a79cc576c7116396a798931c011eb30cd2fcf.pdf": "04b30f712a6c4f9e8a2988ab566a79cc576c7116396a798931c011eb30cd2fcf",
+        "3fcc4620a03d781341c04f848e4fc97f9e12f9d433173d405aced884b44a7211.zip": "3fcc4620a03d781341c04f848e4fc97f9e12f9d433173d405aced884b44a7211",
+        "d0d95e6f0bdd88a15148d3788b69767f81d456ccb3ed3ba7ea1c7c72ff824e0d.zip": "d0d95e6f0bdd88a15148d3788b69767f81d456ccb3ed3ba7ea1c7c72ff824e0d",
+        "c821ab43b80c5a31c33fd992c6c67e5e445907f6593acff39bce7236ec923c34.zip": "c821ab43b80c5a31c33fd992c6c67e5e445907f6593acff39bce7236ec923c34",
         "b413e819bcc86d37713b770079f1c46b29ede65784e58586747474cf5b4e7b87.pdf": "b413e819bcc86d37713b770079f1c46b29ede65784e58586747474cf5b4e7b87",
-        "19b40013df2d439daf9ea6f37e085a23a160d715f6052b9c5b75a9b8ffad3136.zip": "19b40013df2d439daf9ea6f37e085a23a160d715f6052b9c5b75a9b8ffad3136",
-        "4dd342925d55ac9ec4d4671315844d47db01b1ea9add35915d98f12c196d7e70.zip": "4dd342925d55ac9ec4d4671315844d47db01b1ea9add35915d98f12c196d7e70",
-        "68a230523fdcaac1fd0f9aed4c6a94e708a277b709f2c623a22b74938691c4e6.zip": "68a230523fdcaac1fd0f9aed4c6a94e708a277b709f2c623a22b74938691c4e6",
+        "6eb2f5eafdbf464ce31117739eba49f414649cf2855d3864ed4cb8ba426997ed.zip": "6eb2f5eafdbf464ce31117739eba49f414649cf2855d3864ed4cb8ba426997ed",
+        "a248b857a14683deb08cace67b29f4f0d443b8aa50033627fc8cb317dab5e986.zip": "a248b857a14683deb08cace67b29f4f0d443b8aa50033627fc8cb317dab5e986",
         "4cfdf65cf087633dd812e5d05bd0f85a1375dc97507d58db95c2cba719b808d7.zip": "4cfdf65cf087633dd812e5d05bd0f85a1375dc97507d58db95c2cba719b808d7",
-        "02bec0101d08273765f200edcadc6902eadcba7038e08b5cdfcfabf5b1f6a5d6.zip": "02bec0101d08273765f200edcadc6902eadcba7038e08b5cdfcfabf5b1f6a5d6",
-        "b0e00c51be5ce10249ebe9ff28bce624e6099048b34656503f70dfdf0d2b68a6.zip": "b0e00c51be5ce10249ebe9ff28bce624e6099048b34656503f70dfdf0d2b68a6",
-        "63abeb8b51555bf6d53548d8e5151631d2cc0cbf92681d892a369a7808dc2df4.pdf": "63abeb8b51555bf6d53548d8e5151631d2cc0cbf92681d892a369a7808dc2df4"
+        "1a4634fbc0dc8f9d4f1f9c87f377c77ed5aecfca8ec204b3a82cd0708e73d68d.tex": "1a4634fbc0dc8f9d4f1f9c87f377c77ed5aecfca8ec204b3a82cd0708e73d68d"
+      }
+    },
+    {
+      "name": "notes-042decc4e8dcfdb1.zip",
+      "sha": "042decc4e8dcfdb1d6cf1d0e01ba1e1baec645e3abcefea4af4a4e13c23c3cdb",
+      "members": {
+        "004d0239a04a8350b9f3584c54d5df5c4c8156d9004b6e399d45b833887465e2.html": "004d0239a04a8350b9f3584c54d5df5c4c8156d9004b6e399d45b833887465e2",
+        "769c94c489a93e73f1215b90a6d96bd1a2710973e90a7e60d540e3b03cd2188d.html": "769c94c489a93e73f1215b90a6d96bd1a2710973e90a7e60d540e3b03cd2188d",
+        "05e519049d3a9a37b32ca80f0c31f9d722a355fe7da99b30f015025b7c2e6f0e.html": "05e519049d3a9a37b32ca80f0c31f9d722a355fe7da99b30f015025b7c2e6f0e"
       }
     }
   ]
