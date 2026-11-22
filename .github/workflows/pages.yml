@@ -1,6 +1,11 @@
 name: 发布课程笔记
 on:
   workflow_dispatch:
+    inputs:
+      preview_seed:
+        description: Optional verified reading copies for a fresh deployment
+        required: false
+        type: string
 permissions: {}
 concurrency:
   group: pages
@@ -25,6 +30,8 @@ jobs:
           sudo apt-get -q update
           sudo apt-get install -y -q --no-install-recommends latexmk texlive-xetex texlive-lang-chinese texlive-latex-extra texlive-science texlive-bibtex-extra biber poppler-utils fonts-noto-cjk fonts-noto-core fonts-liberation
       - name: 校验课程资料并生成阅读页面
+        env:
+          PREVIEW_SEED: ${{ inputs.preview_seed }}
         run: python3 site-tools/build_site.py
       - uses: actions/upload-pages-artifact@v3
         with:
