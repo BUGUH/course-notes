@@ -71,7 +71,63 @@
   },
   "cff61faa3d04bcce4648": {
     "ratio": 0.70708,
-    "outline": []
+    "outline": [
+      {
+        "label": "2.24",
+        "page": 1,
+        "level": 1
+      },
+      {
+        "label": "3.3",
+        "page": 2,
+        "level": 1
+      },
+      {
+        "label": "3.23",
+        "page": 8,
+        "level": 1
+      },
+      {
+        "label": "3.31",
+        "page": 11,
+        "level": 1
+      },
+      {
+        "label": "4.7 二重积分与二次积分",
+        "page": 13,
+        "level": 1
+      },
+      {
+        "label": "4.14 反常重积分",
+        "page": 15,
+        "level": 1
+      },
+      {
+        "label": "5.5 曲线积分与曲面积分",
+        "page": 17,
+        "level": 1
+      },
+      {
+        "label": "二、曲面积分",
+        "page": 18,
+        "level": 2
+      },
+      {
+        "label": "三维版本的 Green 公式",
+        "page": 19,
+        "level": 2
+      },
+      {
+        "label": "5.19",
+        "page": 20,
+        "level": 1
+      },
+      {
+        "label": "6.2",
+        "page": 23,
+        "level": 1
+      }
+    ]
   },
   "7fa174f6b41a6f914bb5": {
     "ratio": 0.70708,
@@ -87,7 +143,83 @@
   },
   "a362499b7205b93508ce": {
     "ratio": 0.70708,
-    "outline": []
+    "outline": [
+      {
+        "label": "隐函数求导法则",
+        "page": 1,
+        "level": 1
+      },
+      {
+        "label": "极值问题",
+        "page": 5,
+        "level": 1
+      },
+      {
+        "label": "条件极值",
+        "page": 6,
+        "level": 2
+      },
+      {
+        "label": "多元函数微分学的几何应用",
+        "page": 7,
+        "level": 1
+      },
+      {
+        "label": "四、空间曲面的切平面与法线",
+        "page": 8,
+        "level": 2
+      },
+      {
+        "label": "函数列与函数项级数",
+        "page": 9,
+        "level": 1
+      },
+      {
+        "label": "一致收敛函数列与函数项级数的性质",
+        "page": 12,
+        "level": 2
+      },
+      {
+        "label": "二、可积性定理",
+        "page": 14,
+        "level": 3
+      },
+      {
+        "label": "三、可微性定理",
+        "page": 15,
+        "level": 3
+      },
+      {
+        "label": "Dini 定理",
+        "page": 16,
+        "level": 3
+      },
+      {
+        "label": "幂级数",
+        "page": 17,
+        "level": 1
+      },
+      {
+        "label": "初等函数的幂级数展开",
+        "page": 20,
+        "level": 2
+      },
+      {
+        "label": "Fourier 级数",
+        "page": 23,
+        "level": 1
+      },
+      {
+        "label": "四、Riemann 引理",
+        "page": 24,
+        "level": 2
+      },
+      {
+        "label": "局部性定理",
+        "page": 25,
+        "level": 2
+      }
+    ]
   },
   "78d1369f5ef2f4f53bfd": {
     "ratio": 0.70708,
@@ -169,16 +301,20 @@
     "ratio": 0.70708,
     "outline": [
       {
-        "label": "原第1页",
+        "label": "Dynamical system",
         "page": 1,
         "level": 1
       },
       {
-        "label": "原第2页",
+        "label": "Important consequence of µ being ergodic",
         "page": 2,
         "level": 1
       }
     ]
+  },
+  "4fea398ba41ef5145595": {
+    "ratio": 0.70708,
+    "outline": []
   },
   "80249085c6a53c2e13cd": {
     "ratio": 0.77451,
@@ -234,10 +370,6 @@
         "level": 1
       }
     ]
-  },
-  "86da373b7fae22eefa0d": {
-    "ratio": 0.77328,
-    "outline": []
   },
   "ffc4611e430da9b38e6f": {
     "ratio": 0.70708,

@@ -114,7 +114,7 @@ def make(docs,catalog,previews):
     if fragment_path.exists():fragments=json.loads(fragment_path.read_text(encoding="utf-8-sig"))
     (docs/"articles").mkdir(parents=True,exist_ok=True)
     formats=sorted({r["format"] for r in rows})
-    if any("transcription" in r or r.get("corrected") for r in rows):formats.append("已校对的 LaTeX 排版稿")
+    if any("transcription" in r or r.get("corrected") or r.get("typeset_source_sha256") for r in rows):formats.append("已校对的 LaTeX 排版稿")
     body=f'<section class="index-title"><h1>课程笔记</h1><p>{len(groups)} 门课程及专题 · {len(rows)} 份资料</p></section>'
     body+='<div class="filters"><label>搜索<input type="search" id="q" placeholder="题名、课程或关键词"></label>'
     for f,name,values in (("subject","学科",by_subject),("course","课程",groups),("type","资料类型",types),("fmt","格式或版本",formats)):

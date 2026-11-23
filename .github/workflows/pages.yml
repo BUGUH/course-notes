@@ -19,8 +19,18 @@ jobs:
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
+      - name: 检查阅读文件格式
+        id: formats
+        run: |
+          python3 - <<'PY'
+          import json, os
+          with open('catalog.json', encoding='utf-8') as stream:
+              needs_tex = any(row['format'] == 'LaTeX' for row in json.load(stream)['items'])
+          with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as stream:
+              print('needs_tex=' + str(needs_tex).lower(), file=stream)
+          PY
       - name: 安装 LaTeX 阅读版编译工具
-        if: ${{ hashFiles('has-tex.txt') != '' && inputs.preview_seed == '' }}
+        if: ${{ steps.formats.outputs.needs_tex == 'true' && inputs.preview_seed == '' }}
         run: |
           curl -fsSL --retry 3 https://github.com/tectonic-typesetting/tectonic/releases/download/tectonic%400.17.0/tectonic-0.17.0-x86_64-unknown-linux-musl.tar.gz -o "$RUNNER_TEMP/tectonic.tar.gz"
           echo "8533d07f9ccbd7a65824b9e0459041bca34af1eb33daba48f59215593753a3b7  $RUNNER_TEMP/tectonic.tar.gz" | sha256sum --check
