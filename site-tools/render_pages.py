@@ -69,6 +69,8 @@ def article(docs,r,group,previews,meta,fragment):
     contents=[];html=""
     if fragment:
         html=fragment["html"];contents=[(sec["id"],sec["name"],sec["level"]) for sec in fragment["headings"]]
+        html=re.sub(r'(<math\s+display="(block|inline)"[\s\S]*?</math>)',
+                    lambda match:f'<span class="math {match[2]}">{match[1]}</span>',html)
         html='<div class="prose">'+html+'</div>'
     elif chosen:
         m=meta.get(rid,{}) if not t else {}

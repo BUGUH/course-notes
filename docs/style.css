@@ -8,3 +8,34 @@
 @media(max-width:850px){.filters{grid-template-columns:repeat(2,minmax(0,1fr))}.filters label:first-child{grid-column:1/-1}.reading-grid{display:flex;flex-direction:column;gap:0}.toc{order:-1;position:static;max-height:none;width:100%;border-bottom:1px solid var(--line);padding-bottom:.6rem;margin-bottom:1.3rem}.toc details[open] nav{max-height:40vh;overflow:auto}.shell{padding:1.8rem 1.2rem 2.8rem}.back{margin-bottom:1rem}.head-inner,footer{padding-left:1.2rem;padding-right:1.2rem}.mainnav{gap:.9rem}.rule{margin:1.4rem 0}.series{margin:.7rem 0 0}.entry small{white-space:normal}.prose{font-size:1.054rem}}
 @media(max-width:480px){.head-inner{gap:.4rem;min-height:3.35rem}.brand{font-size:.93rem}.mainnav{gap:.6rem;font-size:.87rem}.tools a,.tools button{width:1.75rem}.filters{gap:.55rem}.shell{padding-left:1rem;padding-right:1rem}.topics a{min-height:44px}.prevnext{gap:.7rem}.prevnext a strong{font-size:.92rem}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+
+.prose .math.display {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+h1 {
+  text-wrap: balance;
+}
+
+@media (max-width: 360px) {
+  .head-inner {
+    flex-wrap: wrap;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+
+  .mainnav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.prose .math.inline {
+  display: inline-block;
+  max-width: 100%;
+  overflow-x: auto;
+  vertical-align: middle;
+}

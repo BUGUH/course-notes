@@ -701,19 +701,6 @@
       "url": "files/6f786868f0b997d49f55c7a3e49b32e18b78d2d2f099decf83fe4d428787d420.pdf"
     },
     {
-      "id": "b1e59708a46bcf6bcc0e",
-      "title": "复习笔记",
-      "course": "图论",
-      "term": "大四下",
-      "type": "复习资料",
-      "format": "PDF",
-      "ext": ".pdf",
-      "bytes": 3270403,
-      "pages": 14,
-      "sha256": "fac060a31a7452f9d4d89906de81d0dc100127e21ca483bf8eb2e2fe0973c1d3",
-      "url": "files/fac060a31a7452f9d4d89906de81d0dc100127e21ca483bf8eb2e2fe0973c1d3.pdf"
-    },
-    {
       "id": "19706491d3f1ced9eb7d",
       "title": "笔记（选页）",
       "course": "图论",
@@ -1210,6 +1197,30 @@
       "preview_sha256": "2b50ab0bcd7658884c2ca2c1fdf3590761fa560d161bc486343a278fe79e37b5"
     },
     {
+      "id": "e3d692abbe829de92939",
+      "title": "HW6（选页）",
+      "course": "科学计算",
+      "term": "大四上",
+      "type": "作业",
+      "format": "LaTeX",
+      "ext": ".zip",
+      "bytes": 581222,
+      "pages": 5,
+      "sha256": "2a8a6d1a048fc8d2a3c1092792f37a1f563260003f141f2498961fe3be09c46d",
+      "original_pages": 8,
+      "source_pages": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "url": "files/2a8a6d1a048fc8d2a3c1092792f37a1f563260003f141f2498961fe3be09c46d.zip",
+      "corrected": true,
+      "main": "e3d692abbe829de92939.tex",
+      "preview_sha256": "9ca9511e5f6222b8c076475d7bdc07d610411b63f86f931500cd334afb75c4a4"
+    },
+    {
       "id": "f45e22a9a12d0128d551",
       "title": "HW7（选页）",
       "course": "科学计算",
@@ -1364,19 +1375,6 @@
       "pages": 14,
       "sha256": "31e44eb2af4be2c00b40a4251169b06c8ef531e6862a53b932fa299b0e267317",
       "url": "files/31e44eb2af4be2c00b40a4251169b06c8ef531e6862a53b932fa299b0e267317.pdf"
-    },
-    {
-      "id": "8b2fe5d1358fae5dc2d2",
-      "title": "期末复习",
-      "course": "大学物理",
-      "term": "大一",
-      "type": "复习资料",
-      "format": "PDF",
-      "ext": ".pdf",
-      "bytes": 1620837,
-      "pages": 7,
-      "sha256": "d1c5c25ad6cdb62844af7a113582103732fb089add74c29044bbd2414fdff9a0",
-      "url": "files/d1c5c25ad6cdb62844af7a113582103732fb089add74c29044bbd2414fdff9a0.pdf"
     },
     {
       "id": "86da373b7fae22eefa0d",
@@ -1613,15 +1611,13 @@
       }
     },
     {
-      "name": "notes-a0ca6b83ed5a4816.zip",
-      "sha": "a0ca6b83ed5a481685171f07dacd6c13db59791688667ea2a420b9857827078c",
+      "name": "notes-30d4519efe7edf6e.zip",
+      "sha": "30d4519efe7edf6ed6531cee236b52f42ffb705a9c8bebb2796692d535bd81a5",
       "members": {
-        "d1c5c25ad6cdb62844af7a113582103732fb089add74c29044bbd2414fdff9a0.pdf": "d1c5c25ad6cdb62844af7a113582103732fb089add74c29044bbd2414fdff9a0",
         "0ec4666dbc7fc8c3ac4e231711a796e4a52a4ef5e5d77a8c39ede16af11d60e9.pdf": "0ec4666dbc7fc8c3ac4e231711a796e4a52a4ef5e5d77a8c39ede16af11d60e9",
         "d4292efda3fda2073299a6531685fe22fc62c2efd3629222da761737ad90f2b1.pdf": "d4292efda3fda2073299a6531685fe22fc62c2efd3629222da761737ad90f2b1",
         "4d0ef23e86270373053ae372f9d9d7a6eb68563a11e7367600e206982ee60050.pdf": "4d0ef23e86270373053ae372f9d9d7a6eb68563a11e7367600e206982ee60050",
         "31e44eb2af4be2c00b40a4251169b06c8ef531e6862a53b932fa299b0e267317.pdf": "31e44eb2af4be2c00b40a4251169b06c8ef531e6862a53b932fa299b0e267317",
-        "fac060a31a7452f9d4d89906de81d0dc100127e21ca483bf8eb2e2fe0973c1d3.pdf": "fac060a31a7452f9d4d89906de81d0dc100127e21ca483bf8eb2e2fe0973c1d3",
         "edd921db058672b1372392faa4928aa297840e8ba841f5272548db776bccb991.pdf": "edd921db058672b1372392faa4928aa297840e8ba841f5272548db776bccb991"
       }
     },
@@ -1651,8 +1647,8 @@
       }
     },
     {
-      "name": "notes-bd82a5f600068f4f.zip",
-      "sha": "bd82a5f600068f4f54a1505cc40b2b7fb6b78da018ba7c88c0d8644dcad44500",
+      "name": "notes-9f1bc4d846aa05cf.zip",
+      "sha": "9f1bc4d846aa05cf87d297d0a0cff7eb379658331af11743297ab695796505c2",
       "members": {
         "b37e5d2cbcfcc99227ba03daf4fda4e43a6bd38b58bdc02527825cef47b3c55e.zip": "b37e5d2cbcfcc99227ba03daf4fda4e43a6bd38b58bdc02527825cef47b3c55e",
         "27ba3c7b04c8d4b2e197bcc9df2f626127a8fb20c915ff96e25acec4dc757229.pdf": "27ba3c7b04c8d4b2e197bcc9df2f626127a8fb20c915ff96e25acec4dc757229",
@@ -1662,6 +1658,7 @@
         "04b30f712a6c4f9e8a2988ab566a79cc576c7116396a798931c011eb30cd2fcf.pdf": "04b30f712a6c4f9e8a2988ab566a79cc576c7116396a798931c011eb30cd2fcf",
         "3fcc4620a03d781341c04f848e4fc97f9e12f9d433173d405aced884b44a7211.zip": "3fcc4620a03d781341c04f848e4fc97f9e12f9d433173d405aced884b44a7211",
         "d0d95e6f0bdd88a15148d3788b69767f81d456ccb3ed3ba7ea1c7c72ff824e0d.zip": "d0d95e6f0bdd88a15148d3788b69767f81d456ccb3ed3ba7ea1c7c72ff824e0d",
+        "2a8a6d1a048fc8d2a3c1092792f37a1f563260003f141f2498961fe3be09c46d.zip": "2a8a6d1a048fc8d2a3c1092792f37a1f563260003f141f2498961fe3be09c46d",
         "c821ab43b80c5a31c33fd992c6c67e5e445907f6593acff39bce7236ec923c34.zip": "c821ab43b80c5a31c33fd992c6c67e5e445907f6593acff39bce7236ec923c34",
         "afa22514352c06a4522bcbaf2ca16345d0057278b47b6b36009465d1ed122a84.zip": "afa22514352c06a4522bcbaf2ca16345d0057278b47b6b36009465d1ed122a84",
         "b413e819bcc86d37713b770079f1c46b29ede65784e58586747474cf5b4e7b87.pdf": "b413e819bcc86d37713b770079f1c46b29ede65784e58586747474cf5b4e7b87",
@@ -1683,7 +1680,7 @@
     }
   ],
   "reading_bundle": {
-    "name": "reading-copies-b9e72b05e4452c65.zip",
-    "sha": "b9e72b05e4452c65ece4a3e854b916478fbae71738c7817889414b0869d3a29c"
+    "name": "reading-copies-a634be2b370b4075.zip",
+    "sha": "a634be2b370b40755def56a373bdd9c74d50bc17ea744d7a93834d6eccc2b959"
   }
 }
