@@ -239,19 +239,6 @@
       "url": "files/e7a8a36c4dfec0b03605508cf1c8aff667851f7426fe192ebf906b2f54338090.pdf"
     },
     {
-      "id": "067dc1a7db5c3af6be6a",
-      "title": "复习",
-      "course": "实分析",
-      "term": "大二下",
-      "type": "复习资料",
-      "format": "PDF",
-      "ext": ".pdf",
-      "bytes": 6704434,
-      "pages": 37,
-      "sha256": "1752415598f6a18fea26194a27f29b94b6325b8d6212a3265078b734a067109b",
-      "url": "files/1752415598f6a18fea26194a27f29b94b6325b8d6212a3265078b734a067109b.pdf"
-    },
-    {
       "id": "94616e813116bae20b7a",
       "title": "笔记（手写选页）",
       "course": "实分析",
@@ -1616,13 +1603,6 @@
     }
   ],
   "packs": [
-    {
-      "name": "notes-65590bf198d7c686.zip",
-      "sha": "65590bf198d7c6864f125ef8560b2a4fd309a5e55298edd7164fdf8f5d326dee",
-      "members": {
-        "1752415598f6a18fea26194a27f29b94b6325b8d6212a3265078b734a067109b.pdf": "1752415598f6a18fea26194a27f29b94b6325b8d6212a3265078b734a067109b"
-      }
-    },
     {
       "name": "notes-57da5ea53cd24af3.zip",
       "sha": "57da5ea53cd24af33d0f4f7619ac524dd4e0316d86c3c6118117a175d7040545",
