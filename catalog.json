@@ -521,19 +521,6 @@
       "url": "files/f9af99f870c4f7f9e3962a4b1f8b1bca61fd3bc25d8d6ea7a36870f31df6665c.pdf"
     },
     {
-      "id": "23e681d31629a6ba04ef",
-      "title": "习题",
-      "course": "微分几何",
-      "term": "大三上",
-      "type": "习题",
-      "format": "PDF",
-      "ext": ".pdf",
-      "bytes": 6124968,
-      "pages": 32,
-      "sha256": "0652ef14589c43712f390b35ff1dbb75f1bf43b6c3438a4e0433a376cfbe7109",
-      "url": "files/0652ef14589c43712f390b35ff1dbb75f1bf43b6c3438a4e0433a376cfbe7109.pdf"
-    },
-    {
       "id": "b4255c39e113ceb9f24b",
       "title": "微分几何背诵！",
       "course": "微分几何",
@@ -1322,10 +1309,9 @@
   ],
   "packs": [
     {
-      "name": "notes-40c6864de5d34c96.zip",
-      "sha": "40c6864de5d34c969cce0408b7d933cfde41deb784d3c1a1f328c3003be401a4",
+      "name": "notes-cafe728ff1cea888.zip",
+      "sha": "cafe728ff1cea888bb2ab7b739b5c43b577bb6755766aa7fe9a8a0d0783f2007",
       "members": {
-        "0652ef14589c43712f390b35ff1dbb75f1bf43b6c3438a4e0433a376cfbe7109.pdf": "0652ef14589c43712f390b35ff1dbb75f1bf43b6c3438a4e0433a376cfbe7109",
         "1752415598f6a18fea26194a27f29b94b6325b8d6212a3265078b734a067109b.pdf": "1752415598f6a18fea26194a27f29b94b6325b8d6212a3265078b734a067109b",
         "0151d7316fff62dd3dd4d110c39147ff476da04a93082ba691f376135e98d5bc.pdf": "0151d7316fff62dd3dd4d110c39147ff476da04a93082ba691f376135e98d5bc"
       }
