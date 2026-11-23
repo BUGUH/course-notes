@@ -65,9 +65,9 @@
       "type": "复习资料",
       "format": "LaTeX",
       "ext": ".zip",
-      "bytes": 324553,
+      "bytes": 324595,
       "pages": 14,
-      "sha256": "189d72cdc5ac7f743f7ba6e0788e01fdcc221663f97234ca424c4c047bf0e869",
+      "sha256": "2256ac2c12c166a74cfef9643d04a7dde36a1ad0f98eead71a905f62f93c7f23",
       "original_pages": 58,
       "source_pages": [
         1,
@@ -85,10 +85,10 @@
         40,
         41
       ],
-      "url": "files/189d72cdc5ac7f743f7ba6e0788e01fdcc221663f97234ca424c4c047bf0e869.zip",
+      "url": "files/2256ac2c12c166a74cfef9643d04a7dde36a1ad0f98eead71a905f62f93c7f23.zip",
       "corrected": true,
       "main": "main.tex",
-      "preview_sha256": "cbe5f2b8ca77a87af760dbbc22a84740511a9c1383467bb4a97cecf37173ad38"
+      "preview_sha256": "800a2d329ce1284e0a1863548e787ef0f550ad58a351f7cd7933cd6514531770"
     },
     {
       "id": "4b73c1ce362f275eab64",
@@ -1582,11 +1582,11 @@
       }
     },
     {
-      "name": "notes-26fc26de0e8edf7a.zip",
-      "sha": "26fc26de0e8edf7af0b5628370e2de0fa0f2eec4688633b9685e373a1796b082",
+      "name": "notes-f8bd6d85530cdaa1.zip",
+      "sha": "f8bd6d85530cdaa1d5f13407670823046c08718ae7c2bf98e8300ae1d9d5e386",
       "members": {
         "b37e5d2cbcfcc99227ba03daf4fda4e43a6bd38b58bdc02527825cef47b3c55e.zip": "b37e5d2cbcfcc99227ba03daf4fda4e43a6bd38b58bdc02527825cef47b3c55e",
-        "189d72cdc5ac7f743f7ba6e0788e01fdcc221663f97234ca424c4c047bf0e869.zip": "189d72cdc5ac7f743f7ba6e0788e01fdcc221663f97234ca424c4c047bf0e869",
+        "2256ac2c12c166a74cfef9643d04a7dde36a1ad0f98eead71a905f62f93c7f23.zip": "2256ac2c12c166a74cfef9643d04a7dde36a1ad0f98eead71a905f62f93c7f23",
         "d4b03045a46c879d40f8fb60ecc9654c64bceec3f48d9f51f871bc03575d36a3.zip": "d4b03045a46c879d40f8fb60ecc9654c64bceec3f48d9f51f871bc03575d36a3",
         "fb3d5a2f20ac1f1b11954483a42b21f5a76a8cd08c45b23a6d923d2a589818a3.tex": "fb3d5a2f20ac1f1b11954483a42b21f5a76a8cd08c45b23a6d923d2a589818a3",
         "b08136fc77f64cd904ef412b978f25ddf1f09dedd1cfc3d9de22f6f6c69a74cb.zip": "b08136fc77f64cd904ef412b978f25ddf1f09dedd1cfc3d9de22f6f6c69a74cb",
@@ -1627,7 +1627,7 @@
     }
   ],
   "reading_bundle": {
-    "name": "reading-copies-b63437326d9c3ce8.zip",
-    "sha": "b63437326d9c3ce865264279a2d16d8a4a256189777eccbf9cbe6867e8ee7be7"
+    "name": "reading-copies-af5de281d8981730.zip",
+    "sha": "af5de281d89817306af9b31ab6467303547e148d81a41c26682dae8885d42f29"
   }
 }
