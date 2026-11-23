@@ -400,19 +400,6 @@
       "url": "files/52e0cc3de4b10c77eff4ee0f6fac23151ff52ac37f70771aac3133d990c71081.pdf"
     },
     {
-      "id": "60fdcc56d53ae86bfbf8",
-      "title": "思路整理",
-      "course": "常微分方程",
-      "term": "大二上",
-      "type": "笔记",
-      "format": "PDF",
-      "ext": ".pdf",
-      "bytes": 12553818,
-      "pages": 41,
-      "sha256": "237ac9026a119b1f35af33ce820b364aeed99af9410462736f8da9adfed9df1a",
-      "url": "files/237ac9026a119b1f35af33ce820b364aeed99af9410462736f8da9adfed9df1a.pdf"
-    },
-    {
       "id": "cc91566167cbc5dac29c",
       "title": "课堂笔记（手写选页）",
       "course": "常微分方程",
@@ -1285,10 +1272,9 @@
       }
     },
     {
-      "name": "notes-79930616febc893e.zip",
-      "sha": "79930616febc893eb7fa07060946a3520c6697af87b0b72e02992be80dd92e8e",
+      "name": "notes-91bf5c878e874c93.zip",
+      "sha": "91bf5c878e874c9333eb16fd032662d19d41d2ed1b053e25ab15da568928dbe3",
       "members": {
-        "237ac9026a119b1f35af33ce820b364aeed99af9410462736f8da9adfed9df1a.pdf": "237ac9026a119b1f35af33ce820b364aeed99af9410462736f8da9adfed9df1a",
         "5e419277e4d966bdb0104aab46b6b4c8a26620a9e6b6602aa4ee5d72dcb63e9e.pdf": "5e419277e4d966bdb0104aab46b6b4c8a26620a9e6b6602aa4ee5d72dcb63e9e"
       }
     },
