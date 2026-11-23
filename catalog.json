@@ -880,19 +880,6 @@
       "url": "files/0151d7316fff62dd3dd4d110c39147ff476da04a93082ba691f376135e98d5bc.pdf"
     },
     {
-      "id": "84ec0d9c8f6c22849786",
-      "title": "数理统计笔记",
-      "course": "概率论与数理统计",
-      "term": "大二下",
-      "type": "笔记",
-      "format": "PDF",
-      "ext": ".pdf",
-      "bytes": 10090144,
-      "pages": 52,
-      "sha256": "9b9f181bfe6e076712b7eb66590c9fcc2ebbf0dbbede487dea5088d632c8a6e0",
-      "url": "files/9b9f181bfe6e076712b7eb66590c9fcc2ebbf0dbbede487dea5088d632c8a6e0.pdf"
-    },
-    {
       "id": "5556c15444480d6eb207",
       "title": "笔记",
       "course": "随机过程",
@@ -1344,11 +1331,10 @@
       }
     },
     {
-      "name": "notes-8c4a53b9cd572436.zip",
-      "sha": "8c4a53b9cd57243662d262b3df11eb1691da8a616ff551d619ef1944256f3af3",
+      "name": "notes-57da5ea53cd24af3.zip",
+      "sha": "57da5ea53cd24af33d0f4f7619ac524dd4e0316d86c3c6118117a175d7040545",
       "members": {
-        "e7a8a36c4dfec0b03605508cf1c8aff667851f7426fe192ebf906b2f54338090.pdf": "e7a8a36c4dfec0b03605508cf1c8aff667851f7426fe192ebf906b2f54338090",
-        "9b9f181bfe6e076712b7eb66590c9fcc2ebbf0dbbede487dea5088d632c8a6e0.pdf": "9b9f181bfe6e076712b7eb66590c9fcc2ebbf0dbbede487dea5088d632c8a6e0"
+        "e7a8a36c4dfec0b03605508cf1c8aff667851f7426fe192ebf906b2f54338090.pdf": "e7a8a36c4dfec0b03605508cf1c8aff667851f7426fe192ebf906b2f54338090"
       }
     },
     {
