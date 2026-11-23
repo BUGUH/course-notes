@@ -1272,6 +1272,22 @@
       "url": "files/e8db6f8cb8a45772e6bf2fb5c5c36de0fa07638dcdd4749913b94bc792e33de0.pdf"
     },
     {
+      "id": "401ea6933b09568d1cd5",
+      "title": "笔记",
+      "course": "流体力学简介",
+      "term": "大四上",
+      "type": "笔记",
+      "format": "LaTeX",
+      "ext": ".zip",
+      "bytes": 45467,
+      "pages": 8,
+      "sha256": "afa22514352c06a4522bcbaf2ca16345d0057278b47b6b36009465d1ed122a84",
+      "url": "files/afa22514352c06a4522bcbaf2ca16345d0057278b47b6b36009465d1ed122a84.zip",
+      "corrected": true,
+      "main": "401ea6933b09568d1cd5.tex",
+      "preview_sha256": "5920f352c3302bfb07c376ea007c29cf6656231cabc1af1d910b0d6a9065092a"
+    },
+    {
       "id": "fc9cb14ed6c8ee7df529",
       "title": "物理作业（选页）",
       "course": "大学物理",
@@ -1602,8 +1618,8 @@
       }
     },
     {
-      "name": "notes-b83bfd7deb52759d.zip",
-      "sha": "b83bfd7deb52759d28af6e721ed232e62a5942138392ee9fae1714ccc55e7642",
+      "name": "notes-ced125474dcc8d82.zip",
+      "sha": "ced125474dcc8d82bde22ce22ae7e86647bb032b44a007cf872f45c394ed4036",
       "members": {
         "27ba3c7b04c8d4b2e197bcc9df2f626127a8fb20c915ff96e25acec4dc757229.pdf": "27ba3c7b04c8d4b2e197bcc9df2f626127a8fb20c915ff96e25acec4dc757229",
         "fb3d5a2f20ac1f1b11954483a42b21f5a76a8cd08c45b23a6d923d2a589818a3.tex": "fb3d5a2f20ac1f1b11954483a42b21f5a76a8cd08c45b23a6d923d2a589818a3",
@@ -1612,6 +1628,7 @@
         "3fcc4620a03d781341c04f848e4fc97f9e12f9d433173d405aced884b44a7211.zip": "3fcc4620a03d781341c04f848e4fc97f9e12f9d433173d405aced884b44a7211",
         "d0d95e6f0bdd88a15148d3788b69767f81d456ccb3ed3ba7ea1c7c72ff824e0d.zip": "d0d95e6f0bdd88a15148d3788b69767f81d456ccb3ed3ba7ea1c7c72ff824e0d",
         "c821ab43b80c5a31c33fd992c6c67e5e445907f6593acff39bce7236ec923c34.zip": "c821ab43b80c5a31c33fd992c6c67e5e445907f6593acff39bce7236ec923c34",
+        "afa22514352c06a4522bcbaf2ca16345d0057278b47b6b36009465d1ed122a84.zip": "afa22514352c06a4522bcbaf2ca16345d0057278b47b6b36009465d1ed122a84",
         "b413e819bcc86d37713b770079f1c46b29ede65784e58586747474cf5b4e7b87.pdf": "b413e819bcc86d37713b770079f1c46b29ede65784e58586747474cf5b4e7b87",
         "6eb2f5eafdbf464ce31117739eba49f414649cf2855d3864ed4cb8ba426997ed.zip": "6eb2f5eafdbf464ce31117739eba49f414649cf2855d3864ed4cb8ba426997ed",
         "a248b857a14683deb08cace67b29f4f0d443b8aa50033627fc8cb317dab5e986.zip": "a248b857a14683deb08cace67b29f4f0d443b8aa50033627fc8cb317dab5e986",
@@ -1630,7 +1647,7 @@
     }
   ],
   "reading_bundle": {
-    "name": "reading-copies-aff4b4a981e67c4b.zip",
-    "sha": "aff4b4a981e67c4b11becb55ae69bbd759886bbbc011401144a256145ef026b1"
+    "name": "reading-copies-e53589a85b1abe0c.zip",
+    "sha": "e53589a85b1abe0c828668cfa88c901f3d1e42da18544721f5db0f410c3bfa8c"
   }
 }
