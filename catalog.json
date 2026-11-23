@@ -452,19 +452,6 @@
       "url": "files/de68e77fb78788209769706788d3308710eb7bdb4c78d3e8e32cbbbffc8da464.pdf"
     },
     {
-      "id": "53ae305873d5ea9b919f",
-      "title": "笔记",
-      "course": "泛函分析",
-      "term": "大三下",
-      "type": "笔记",
-      "format": "PDF",
-      "ext": ".pdf",
-      "bytes": 10355075,
-      "pages": 45,
-      "sha256": "8307ae7b6f52c4dd38c55069c62d82f16af642be1eca8955392acd09f7968d31",
-      "url": "files/8307ae7b6f52c4dd38c55069c62d82f16af642be1eca8955392acd09f7968d31.pdf"
-    },
-    {
       "id": "8df74655ec8aa4ddd36a",
       "title": "概念定理",
       "course": "近世代数",
@@ -1412,10 +1399,9 @@
   ],
   "packs": [
     {
-      "name": "notes-b0e1d37d877a5c36.zip",
-      "sha": "b0e1d37d877a5c368ea14e157dd57c5a9a8ca4e333892e84286cf772bd77937b",
+      "name": "notes-3131df6c66cb39c9.zip",
+      "sha": "3131df6c66cb39c9377c15db3fa4d22f6c3fc9509e96ed65ff5ed5b3fb429edf",
       "members": {
-        "8307ae7b6f52c4dd38c55069c62d82f16af642be1eca8955392acd09f7968d31.pdf": "8307ae7b6f52c4dd38c55069c62d82f16af642be1eca8955392acd09f7968d31",
         "52e0cc3de4b10c77eff4ee0f6fac23151ff52ac37f70771aac3133d990c71081.pdf": "52e0cc3de4b10c77eff4ee0f6fac23151ff52ac37f70771aac3133d990c71081"
       }
     },
