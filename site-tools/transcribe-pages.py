@@ -7,13 +7,18 @@ from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 
 SITE="https://buguh.github.io/course-notes/"
 CWD=Path(__file__).resolve().parent
-def download(url,dest,digest=None):
-    subprocess.run(["curl","--fail","--location","--retry","3","--connect-timeout","15","--max-time","420","--silent","--show-error","-o",str(dest),url],check=True)
+def download(url,dest,digest=None,*,skip_removed=False):
+    response=subprocess.run(["curl","--fail","--location","--retry","3","--connect-timeout","15","--max-time","420","--silent","--show-error","--write-out","%{http_code}","-o",str(dest),url],stdout=subprocess.PIPE,text=True)
+    if skip_removed and response.returncode==22 and response.stdout.strip()=="404":
+        dest.unlink(missing_ok=True)
+        return False
+    response.check_returncode()
     if digest:
         h=hashlib.sha256()
         with dest.open("rb") as f:
             for chunk in iter(lambda:f.read(1<<20),b""):h.update(chunk)
         if h.hexdigest()!=digest:raise ValueError("Download digest mismatch")
+    return True
 def extract(shard):
     plan=json.loads((CWD/"transcription-pages.json").read_text())
     assigned=[r for r in plan if r["shard"]==shard]
@@ -52,7 +57,9 @@ def extract(shard):
             for row in assigned:
                 assert re.fullmatch(r"files/[0-9a-f]{64}\.pdf",row["url"])
                 pdf=work/"public.pdf"
-                download(SITE+row["url"],pdf,row["sha256"])
+                if not download(SITE+row["url"],pdf,row["sha256"],skip_removed=True):
+                    print("REVIEW_SKIP "+json.dumps({"id":row["id"],"pages":row["pages"],"reason":"public PDF removed (HTTP 404)"},separators=(",",":")),flush=True)
+                    continue
                 for pn in row["pages"]:
                     assert type(pn)==int and pn>=1
                     out=work/"page"
