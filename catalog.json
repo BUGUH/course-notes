@@ -1290,66 +1290,6 @@
       "reviewed": true
     },
     {
-      "id": "0909d4b25fd7f2293eb2",
-      "title": "期末复习（选页）",
-      "course": "科学计算",
-      "term": "大四上",
-      "type": "复习资料",
-      "format": "PDF",
-      "ext": ".pdf",
-      "bytes": 9763444,
-      "pages": 44,
-      "sha256": "e8db6f8cb8a45772e6bf2fb5c5c36de0fa07638dcdd4749913b94bc792e33de0",
-      "original_pages": 55,
-      "source_pages": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        22,
-        24,
-        25,
-        26,
-        27,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        36,
-        37,
-        39,
-        40,
-        41,
-        43,
-        44,
-        45,
-        46,
-        47,
-        48,
-        49,
-        50,
-        51,
-        52,
-        53,
-        54,
-        55
-      ],
-      "url": "files/e8db6f8cb8a45772e6bf2fb5c5c36de0fa07638dcdd4749913b94bc792e33de0.pdf"
-    },
-    {
       "id": "4d01ba837b6acd25e286",
       "title": "作业（选页）",
       "course": "流体力学简介",
@@ -1574,13 +1514,6 @@
       "sha": "2e28d4b6b67b2ea2d63393a666c3f230fd5b5ea3c4d78e1e8342b1d5e774ff6b",
       "members": {
         "1d067961d97b5048cd1357f47562209ee5085b96d9926e51b6daa23f5bb0ec7a.pdf": "1d067961d97b5048cd1357f47562209ee5085b96d9926e51b6daa23f5bb0ec7a"
-      }
-    },
-    {
-      "name": "notes-a149942faaee7d10.zip",
-      "sha": "a149942faaee7d102eabe14761a3aecd1ad6e7aa5978ad5c58dd4e0a6467c70b",
-      "members": {
-        "e8db6f8cb8a45772e6bf2fb5c5c36de0fa07638dcdd4749913b94bc792e33de0.pdf": "e8db6f8cb8a45772e6bf2fb5c5c36de0fa07638dcdd4749913b94bc792e33de0"
       }
     },
     {
