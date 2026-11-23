@@ -310,15 +310,358 @@
   },
   "4fea398ba41ef5145595": {
     "ratio": 0.70708,
-    "outline": []
+    "outline": [
+      {
+        "label": "一、统计量、经验分布函数与中心极限定理",
+        "page": 1,
+        "level": 1
+      },
+      {
+        "label": "二、正态变量的线性函数分布",
+        "page": 2,
+        "level": 1
+      },
+      {
+        "label": "3. 正态样本均值和样本方差的分布",
+        "page": 3,
+        "level": 1
+      },
+      {
+        "label": "4. 次序统计量",
+        "page": 4,
+        "level": 1
+      },
+      {
+        "label": "均匀样本的次序统计量",
+        "page": 5,
+        "level": 1
+      },
+      {
+        "label": "5. 三大分布 2.4.1 χ² 分布",
+        "page": 6,
+        "level": 1
+      },
+      {
+        "label": "卡方密度与各阶矩",
+        "page": 7,
+        "level": 1
+      },
+      {
+        "label": "2.4.2 t 分布",
+        "page": 8,
+        "level": 1
+      },
+      {
+        "label": "2.4.3 F 分布",
+        "page": 9,
+        "level": 1
+      },
+      {
+        "label": "习题13 与t 分布的关系",
+        "page": 10,
+        "level": 1
+      },
+      {
+        "label": "2.7 充分统计量",
+        "page": 11,
+        "level": 1
+      },
+      {
+        "label": "习题 3. 特征函数",
+        "page": 12,
+        "level": 1
+      },
+      {
+        "label": "指数样本的次序统计量",
+        "page": 13,
+        "level": 1
+      },
+      {
+        "label": "三、点估计的性质",
+        "page": 14,
+        "level": 1
+      },
+      {
+        "label": "2. 矩估计",
+        "page": 15,
+        "level": 1
+      },
+      {
+        "label": "3. 极大似然估计",
+        "page": 16,
+        "level": 1
+      },
+      {
+        "label": "4. 一致最小方差无偏估计",
+        "page": 17,
+        "level": 1
+      },
+      {
+        "label": "充分统计量",
+        "page": 18,
+        "level": 1
+      },
+      {
+        "label": "完全统计量",
+        "page": 19,
+        "level": 1
+      },
+      {
+        "label": "(3) C–R 不等式",
+        "page": 20,
+        "level": 1
+      },
+      {
+        "label": "四 1. 区间估计的基本概念",
+        "page": 21,
+        "level": 1
+      },
+      {
+        "label": "(2) 大样本方法",
+        "page": 22,
+        "level": 1
+      },
+      {
+        "label": "5.1 假设检验的概念",
+        "page": 23,
+        "level": 1
+      },
+      {
+        "label": "区间长度、分位数",
+        "page": 24,
+        "level": 1
+      },
+      {
+        "label": "3. 确定否定域的参数",
+        "page": 25,
+        "level": 1
+      },
+      {
+        "label": "正态总体的方差检验",
+        "page": 26,
+        "level": 1
+      }
+    ]
   },
   "84ec0d9c8f6c22849786": {
     "ratio": 0.70708,
-    "outline": []
-  },
-  "5556c15444480d6eb207": {
-    "ratio": 0.70707,
-    "outline": []
+    "outline": [
+      {
+        "label": "中心极限定理的证明？",
+        "page": 1,
+        "level": 1
+      },
+      {
+        "label": "3.1 分布",
+        "page": 2,
+        "level": 1
+      },
+      {
+        "label": "3.8 样本均值",
+        "page": 3,
+        "level": 1
+      },
+      {
+        "label": "(3) 正态分布",
+        "page": 4,
+        "level": 1
+      },
+      {
+        "label": "补。特征函数",
+        "page": 5,
+        "level": 1
+      },
+      {
+        "label": "3.15 样本方差",
+        "page": 6,
+        "level": 1
+      },
+      {
+        "label": "U 方法与二次型",
+        "page": 7,
+        "level": 1
+      },
+      {
+        "label": "标准型（续）",
+        "page": 8,
+        "level": 1
+      },
+      {
+        "label": "正态均值和离差平方和",
+        "page": 9,
+        "level": 1
+      },
+      {
+        "label": "总结与习题",
+        "page": 10,
+        "level": 1
+      },
+      {
+        "label": "3.22 2.3.1 单个次序统计量",
+        "page": 11,
+        "level": 1
+      },
+      {
+        "label": "2.3.2 联合",
+        "page": 12,
+        "level": 1
+      },
+      {
+        "label": "均匀分布的转化",
+        "page": 13,
+        "level": 1
+      },
+      {
+        "label": "3.29 2.4.1 χ² 分布",
+        "page": 14,
+        "level": 1
+      },
+      {
+        "label": "卡方密度与各阶矩",
+        "page": 15,
+        "level": 1
+      },
+      {
+        "label": "2.4.2 t 分布",
+        "page": 16,
+        "level": 1
+      },
+      {
+        "label": "2.4.3 F 分布",
+        "page": 17,
+        "level": 1
+      },
+      {
+        "label": "4.7 无偏性",
+        "page": 18,
+        "level": 1
+      },
+      {
+        "label": "例。正态总体",
+        "page": 19,
+        "level": 1
+      },
+      {
+        "label": "均匀总体及相合性",
+        "page": 20,
+        "level": 1
+      },
+      {
+        "label": "4.12 矩估计",
+        "page": 21,
+        "level": 1
+      },
+      {
+        "label": "矩估计量",
+        "page": 22,
+        "level": 1
+      },
+      {
+        "label": "矩估计与无偏",
+        "page": 23,
+        "level": 1
+      },
+      {
+        "label": "极大似然估计",
+        "page": 24,
+        "level": 1
+      },
+      {
+        "label": "例4。正态总体",
+        "page": 25,
+        "level": 1
+      },
+      {
+        "label": "4.26 条件期望",
+        "page": 26,
+        "level": 1
+      },
+      {
+        "label": "充分性",
+        "page": 27,
+        "level": 1
+      },
+      {
+        "label": "因子分解与完备性",
+        "page": 28,
+        "level": 1
+      },
+      {
+        "label": "4.28 UMVUE",
+        "page": 29,
+        "level": 1
+      },
+      {
+        "label": "例2。指数总体",
+        "page": 30,
+        "level": 1
+      },
+      {
+        "label": "例3。Poisson 总体",
+        "page": 31,
+        "level": 1
+      },
+      {
+        "label": "条件期望",
+        "page": 32,
+        "level": 1
+      },
+      {
+        "label": "5.10 如何研发C–R 不等式？",
+        "page": 33,
+        "level": 1
+      },
+      {
+        "label": "例。正态总体的C–R 下界",
+        "page": 34,
+        "level": 1
+      },
+      {
+        "label": "C–R 下界与极大似然估计",
+        "page": 35,
+        "level": 1
+      },
+      {
+        "label": "5.17 区间估计",
+        "page": 36,
+        "level": 1
+      },
+      {
+        "label": "枢轴变量",
+        "page": 37,
+        "level": 1
+      },
+      {
+        "label": "5.24 假设检验",
+        "page": 38,
+        "level": 1
+      },
+      {
+        "label": "例3。双边检验",
+        "page": 39,
+        "level": 1
+      },
+      {
+        "label": "6.1 见PPT",
+        "page": 40,
+        "level": 1
+      },
+      {
+        "label": "似然比检验",
+        "page": 41,
+        "level": 1
+      },
+      {
+        "label": "正态分布的单侧检验旁注",
+        "page": 42,
+        "level": 1
+      },
+      {
+        "label": "单调变化后凑到t 分布",
+        "page": 43,
+        "level": 1
+      }
+    ]
   },
   "1b4be49019fc8fc6abc9": {
     "ratio": 0.70708,
@@ -385,11 +728,128 @@
   },
   "822ead88a8c91c55e7d1": {
     "ratio": 0.70708,
-    "outline": []
+    "outline": [
+      {
+        "label": "数列极限",
+        "page": 1,
+        "level": 1
+      },
+      {
+        "label": "函数极限",
+        "page": 2,
+        "level": 1
+      },
+      {
+        "label": "微分",
+        "page": 3,
+        "level": 1
+      },
+      {
+        "label": "中值定理",
+        "page": 4,
+        "level": 1
+      },
+      {
+        "label": "不定积分",
+        "page": 5,
+        "level": 1
+      },
+      {
+        "label": "定积分",
+        "page": 6,
+        "level": 1
+      },
+      {
+        "label": "反常积分",
+        "page": 7,
+        "level": 1
+      },
+      {
+        "label": "数项级数",
+        "page": 8,
+        "level": 1
+      },
+      {
+        "label": "函数项级数",
+        "page": 9,
+        "level": 1
+      },
+      {
+        "label": "多元函数微分学",
+        "page": 10,
+        "level": 1
+      },
+      {
+        "label": "重积分",
+        "page": 12,
+        "level": 1
+      },
+      {
+        "label": "曲线积分、曲面积分与场论",
+        "page": 13,
+        "level": 1
+      },
+      {
+        "label": "场论初步",
+        "page": 15,
+        "level": 1
+      },
+      {
+        "label": "含参变量积分",
+        "page": 16,
+        "level": 1
+      }
+    ]
   },
   "89b177743fb74d45b1e7": {
     "ratio": 0.70708,
-    "outline": []
+    "outline": [
+      {
+        "label": "1. 多项式",
+        "page": 1,
+        "level": 1
+      },
+      {
+        "label": "2. 行列式",
+        "page": 2,
+        "level": 1
+      },
+      {
+        "label": "3. 线性方程组",
+        "page": 3,
+        "level": 1
+      },
+      {
+        "label": "4. 矩阵的运算",
+        "page": 4,
+        "level": 1
+      },
+      {
+        "label": "线性（向量）空间",
+        "page": 5,
+        "level": 1
+      },
+      {
+        "label": "线性变换",
+        "page": 6,
+        "level": 1
+      },
+      {
+        "label": "相似标准型与空间分解",
+        "page": 8,
+        "level": 1
+      },
+      {
+        "label": "双线性型、二次型与方阵相合",
+        "page": 12,
+        "level": 1
+      },
+      {
+        "label": "欧式空间与酉空间",
+        "page": 14,
+        "level": 1
+      }
+    ]
   },
   "3dbf400f974d7988744d": {
     "ratio": 0.70708,
