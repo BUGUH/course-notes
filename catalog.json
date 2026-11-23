@@ -388,19 +388,6 @@
       "url": "files/1d067961d97b5048cd1357f47562209ee5085b96d9926e51b6daa23f5bb0ec7a.pdf"
     },
     {
-      "id": "c71fdaf0e8bd7743171c",
-      "title": "实分析预习和阅读",
-      "course": "实分析",
-      "term": "大二下",
-      "type": "了解",
-      "format": "PDF",
-      "ext": ".pdf",
-      "bytes": 5639381,
-      "pages": 25,
-      "sha256": "ed13ac8c4faf37f132a96623bf2392f41d44d3d59a2228e6c949fc20a407f837",
-      "url": "files/ed13ac8c4faf37f132a96623bf2392f41d44d3d59a2228e6c949fc20a407f837.pdf"
-    },
-    {
       "id": "6b941e82c4636e9c9b94",
       "title": "课堂笔记（手写选页）",
       "course": "复分析",
@@ -1372,10 +1359,9 @@
   ],
   "packs": [
     {
-      "name": "notes-d7a047ff3022e349.zip",
-      "sha": "d7a047ff3022e3491eb544d41918d80a6e3d982ab851eb970b02595d63283e31",
+      "name": "notes-40c6864de5d34c96.zip",
+      "sha": "40c6864de5d34c969cce0408b7d933cfde41deb784d3c1a1f328c3003be401a4",
       "members": {
-        "ed13ac8c4faf37f132a96623bf2392f41d44d3d59a2228e6c949fc20a407f837.pdf": "ed13ac8c4faf37f132a96623bf2392f41d44d3d59a2228e6c949fc20a407f837",
         "0652ef14589c43712f390b35ff1dbb75f1bf43b6c3438a4e0433a376cfbe7109.pdf": "0652ef14589c43712f390b35ff1dbb75f1bf43b6c3438a4e0433a376cfbe7109",
         "1752415598f6a18fea26194a27f29b94b6325b8d6212a3265078b734a067109b.pdf": "1752415598f6a18fea26194a27f29b94b6325b8d6212a3265078b734a067109b",
         "0151d7316fff62dd3dd4d110c39147ff476da04a93082ba691f376135e98d5bc.pdf": "0151d7316fff62dd3dd4d110c39147ff476da04a93082ba691f376135e98d5bc"
