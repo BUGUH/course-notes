@@ -2,6 +2,23 @@
   "tag": "course-library-2026-11",
   "items": [
     {
+      "id": "15f90fa8d44f35e3ba50",
+      "title": "隐函数定理的证明和延伸",
+      "course": "数学分析",
+      "term": "",
+      "type": "专题报告",
+      "format": "LaTeX",
+      "ext": ".zip",
+      "bytes": 9862,
+      "pages": 8,
+      "sha256": "b37e5d2cbcfcc99227ba03daf4fda4e43a6bd38b58bdc02527825cef47b3c55e",
+      "url": "files/b37e5d2cbcfcc99227ba03daf4fda4e43a6bd38b58bdc02527825cef47b3c55e.zip",
+      "main": "main.tex",
+      "preview_sha256": "f2232057e1af0aebc878880ea90199e2a5544f5dd7a873a09724ce22799bb2cb",
+      "corrected": true,
+      "web_reading": "files/aa45ce9b7fa7f8b09e6930959ab2723c2eaeebd8f8e3c6fcdee821464ae6e549.html"
+    },
+    {
       "id": "cff61faa3d04bcce4648",
       "title": "数学分析2习题课（选页）",
       "course": "数学分析（二）",
@@ -995,6 +1012,22 @@
       "url": "files/811379d171f676f926a5e71120ded1dc7103139686e8b6ef4db5db8e7981c304.pdf"
     },
     {
+      "id": "650784d13add39fe1603",
+      "title": "hw4",
+      "course": "微分方程数值解",
+      "term": "大三下",
+      "type": "作业",
+      "format": "LaTeX",
+      "ext": ".zip",
+      "bytes": 32326,
+      "pages": 4,
+      "sha256": "f611ea780761c79e73269e1af8629e83b93bb0e8a291d6c1c4b6ecbe66079c85",
+      "url": "files/f611ea780761c79e73269e1af8629e83b93bb0e8a291d6c1c4b6ecbe66079c85.zip",
+      "corrected": true,
+      "main": "main.tex",
+      "preview_sha256": "95c96c3be8bdf30310fb9e35a51fc88e48887bf189fc14bc886ae4c8435b47ca"
+    },
+    {
       "id": "d09b02d87900d40ba5b1",
       "title": "作业",
       "course": "微分方程数值解",
@@ -1618,12 +1651,14 @@
       }
     },
     {
-      "name": "notes-ced125474dcc8d82.zip",
-      "sha": "ced125474dcc8d82bde22ce22ae7e86647bb032b44a007cf872f45c394ed4036",
+      "name": "notes-bd82a5f600068f4f.zip",
+      "sha": "bd82a5f600068f4f54a1505cc40b2b7fb6b78da018ba7c88c0d8644dcad44500",
       "members": {
+        "b37e5d2cbcfcc99227ba03daf4fda4e43a6bd38b58bdc02527825cef47b3c55e.zip": "b37e5d2cbcfcc99227ba03daf4fda4e43a6bd38b58bdc02527825cef47b3c55e",
         "27ba3c7b04c8d4b2e197bcc9df2f626127a8fb20c915ff96e25acec4dc757229.pdf": "27ba3c7b04c8d4b2e197bcc9df2f626127a8fb20c915ff96e25acec4dc757229",
         "fb3d5a2f20ac1f1b11954483a42b21f5a76a8cd08c45b23a6d923d2a589818a3.tex": "fb3d5a2f20ac1f1b11954483a42b21f5a76a8cd08c45b23a6d923d2a589818a3",
         "4ba14eb85acfeba8755c14f0d4a2e3ce041d9ce2b1ff1587699b02c632933f97.zip": "4ba14eb85acfeba8755c14f0d4a2e3ce041d9ce2b1ff1587699b02c632933f97",
+        "f611ea780761c79e73269e1af8629e83b93bb0e8a291d6c1c4b6ecbe66079c85.zip": "f611ea780761c79e73269e1af8629e83b93bb0e8a291d6c1c4b6ecbe66079c85",
         "04b30f712a6c4f9e8a2988ab566a79cc576c7116396a798931c011eb30cd2fcf.pdf": "04b30f712a6c4f9e8a2988ab566a79cc576c7116396a798931c011eb30cd2fcf",
         "3fcc4620a03d781341c04f848e4fc97f9e12f9d433173d405aced884b44a7211.zip": "3fcc4620a03d781341c04f848e4fc97f9e12f9d433173d405aced884b44a7211",
         "d0d95e6f0bdd88a15148d3788b69767f81d456ccb3ed3ba7ea1c7c72ff824e0d.zip": "d0d95e6f0bdd88a15148d3788b69767f81d456ccb3ed3ba7ea1c7c72ff824e0d",
@@ -1637,9 +1672,10 @@
       }
     },
     {
-      "name": "notes-042decc4e8dcfdb1.zip",
-      "sha": "042decc4e8dcfdb1d6cf1d0e01ba1e1baec645e3abcefea4af4a4e13c23c3cdb",
+      "name": "notes-edbf476da851fee3.zip",
+      "sha": "edbf476da851fee3bda9c38ef5a313774de2c72804b90d653c00437d367a3e41",
       "members": {
+        "aa45ce9b7fa7f8b09e6930959ab2723c2eaeebd8f8e3c6fcdee821464ae6e549.html": "aa45ce9b7fa7f8b09e6930959ab2723c2eaeebd8f8e3c6fcdee821464ae6e549",
         "004d0239a04a8350b9f3584c54d5df5c4c8156d9004b6e399d45b833887465e2.html": "004d0239a04a8350b9f3584c54d5df5c4c8156d9004b6e399d45b833887465e2",
         "769c94c489a93e73f1215b90a6d96bd1a2710973e90a7e60d540e3b03cd2188d.html": "769c94c489a93e73f1215b90a6d96bd1a2710973e90a7e60d540e3b03cd2188d",
         "05e519049d3a9a37b32ca80f0c31f9d722a355fe7da99b30f015025b7c2e6f0e.html": "05e519049d3a9a37b32ca80f0c31f9d722a355fe7da99b30f015025b7c2e6f0e"
@@ -1647,7 +1683,7 @@
     }
   ],
   "reading_bundle": {
-    "name": "reading-copies-e53589a85b1abe0c.zip",
-    "sha": "e53589a85b1abe0c828668cfa88c901f3d1e42da18544721f5db0f410c3bfa8c"
+    "name": "reading-copies-b9e72b05e4452c65.zip",
+    "sha": "b9e72b05e4452c65ece4a3e854b916478fbae71738c7817889414b0869d3a29c"
   }
 }
