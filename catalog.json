@@ -465,19 +465,6 @@
       "url": "files/5e419277e4d966bdb0104aab46b6b4c8a26620a9e6b6602aa4ee5d72dcb63e9e.pdf"
     },
     {
-      "id": "808030fa405a06b5a1c4",
-      "title": "作业",
-      "course": "拓扑学",
-      "term": "大三上",
-      "type": "作业",
-      "format": "PDF",
-      "ext": ".pdf",
-      "bytes": 19134813,
-      "pages": 53,
-      "sha256": "b7c4b655df877fc232e0cbc2ef8bdecc73bd4889a0e2f6213f343fc0ffb124b7",
-      "url": "files/b7c4b655df877fc232e0cbc2ef8bdecc73bd4889a0e2f6213f343fc0ffb124b7.pdf"
-    },
-    {
       "id": "4ac8088ea8d59e82b0c4",
       "title": "笔记",
       "course": "拓扑学",
@@ -1429,10 +1416,9 @@
       }
     },
     {
-      "name": "notes-13969180c2ba2271.zip",
-      "sha": "13969180c2ba2271928c7fd9b1ad03322408c959163c8b1d443d132fcd12b665",
+      "name": "notes-4b3f9fe1eb68d7f9.zip",
+      "sha": "4b3f9fe1eb68d7f9922615efbba700f63fe8eaa19bf5412377b7a31a24432bcf",
       "members": {
-        "b7c4b655df877fc232e0cbc2ef8bdecc73bd4889a0e2f6213f343fc0ffb124b7.pdf": "b7c4b655df877fc232e0cbc2ef8bdecc73bd4889a0e2f6213f343fc0ffb124b7",
         "de68e77fb78788209769706788d3308710eb7bdb4c78d3e8e32cbbbffc8da464.pdf": "de68e77fb78788209769706788d3308710eb7bdb4c78d3e8e32cbbbffc8da464"
       }
     },
