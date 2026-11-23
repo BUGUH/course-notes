@@ -58,36 +58,6 @@
       "url": "files/bbc919ee6e8d6c502133d575ee2eaede7c13dbf71736dbb5d9ee61fb19b865b6.pdf"
     },
     {
-      "id": "7fa174f6b41a6f914bb5",
-      "title": "2期末复习（选页）",
-      "course": "数学分析（二）",
-      "term": "大一",
-      "type": "复习资料",
-      "format": "PDF",
-      "ext": ".pdf",
-      "bytes": 4729518,
-      "pages": 14,
-      "sha256": "5a8d738c14c54857eb2b20ccbd29e740eb26d98f4c1a9efa0a509427345a0941",
-      "original_pages": 58,
-      "source_pages": [
-        1,
-        2,
-        3,
-        4,
-        10,
-        20,
-        21,
-        27,
-        28,
-        37,
-        38,
-        39,
-        40,
-        41
-      ],
-      "url": "files/5a8d738c14c54857eb2b20ccbd29e740eb26d98f4c1a9efa0a509427345a0941.pdf"
-    },
-    {
       "id": "4b73c1ce362f275eab64",
       "title": "定理和复习",
       "course": "数学分析（二）",
@@ -1427,19 +1397,6 @@
       "url": "files/b0282bdd691143a87244d43f1d32ea79c9bcfe4da7deefb9f27f953ee4cf9a15.pdf"
     },
     {
-      "id": "89b177743fb74d45b1e7",
-      "title": "高代",
-      "course": "夏令营",
-      "term": "大三下",
-      "type": "复习资料",
-      "format": "PDF",
-      "ext": ".pdf",
-      "bytes": 3116727,
-      "pages": 16,
-      "sha256": "faf20162f1e9b666ff3a28954bcaf7cd53662e3e3b3d2cd36130572ab47eff87",
-      "url": "files/faf20162f1e9b666ff3a28954bcaf7cd53662e3e3b3d2cd36130572ab47eff87.pdf"
-    },
-    {
       "id": "3dbf400f974d7988744d",
       "title": "E-I 平衡网络与图像的重构",
       "course": "专业研讨课（三）",
@@ -1457,12 +1414,11 @@
   ],
   "packs": [
     {
-      "name": "notes-2eacfef94411b363.zip",
-      "sha": "2eacfef94411b3636d068f67a24da85f5b114bbc78d178dfe564c6a20eb26bbe",
+      "name": "notes-6b3dca1160767fc8.zip",
+      "sha": "6b3dca1160767fc8610d4137648593ed69bc7723ee4d3d24b254f09170a204ae",
       "members": {
         "a56090898996b7dbf09973c63a865523fd7d48ea08c7fdaf98ef0a875e597304.pdf": "a56090898996b7dbf09973c63a865523fd7d48ea08c7fdaf98ef0a875e597304",
-        "b0282bdd691143a87244d43f1d32ea79c9bcfe4da7deefb9f27f953ee4cf9a15.pdf": "b0282bdd691143a87244d43f1d32ea79c9bcfe4da7deefb9f27f953ee4cf9a15",
-        "faf20162f1e9b666ff3a28954bcaf7cd53662e3e3b3d2cd36130572ab47eff87.pdf": "faf20162f1e9b666ff3a28954bcaf7cd53662e3e3b3d2cd36130572ab47eff87"
+        "b0282bdd691143a87244d43f1d32ea79c9bcfe4da7deefb9f27f953ee4cf9a15.pdf": "b0282bdd691143a87244d43f1d32ea79c9bcfe4da7deefb9f27f953ee4cf9a15"
       }
     },
     {
@@ -1543,10 +1499,9 @@
       }
     },
     {
-      "name": "notes-71df1626502f56c4.zip",
-      "sha": "71df1626502f56c4d92f9c045b322f635c6d057b29faa5b09c3b9d7857fa11fe",
+      "name": "notes-b2d11be5b0534053.zip",
+      "sha": "b2d11be5b053405393f2bc956e2cca88cc2b03bc2c6bc8ae32f4710279aea22a",
       "members": {
-        "5a8d738c14c54857eb2b20ccbd29e740eb26d98f4c1a9efa0a509427345a0941.pdf": "5a8d738c14c54857eb2b20ccbd29e740eb26d98f4c1a9efa0a509427345a0941",
         "bbc919ee6e8d6c502133d575ee2eaede7c13dbf71736dbb5d9ee61fb19b865b6.pdf": "bbc919ee6e8d6c502133d575ee2eaede7c13dbf71736dbb5d9ee61fb19b865b6",
         "6846f7d4df3fef43db3d60ddfc3d2e4976eadfe9d468468158e3a75af390e57b.pdf": "6846f7d4df3fef43db3d60ddfc3d2e4976eadfe9d468468158e3a75af390e57b",
         "e8db6f8cb8a45772e6bf2fb5c5c36de0fa07638dcdd4749913b94bc792e33de0.pdf": "e8db6f8cb8a45772e6bf2fb5c5c36de0fa07638dcdd4749913b94bc792e33de0"
