@@ -1,7 +1,7 @@
 {
   "15f90fa8d44f35e3ba50": {
     "source_sha256": "b37e5d2cbcfcc99227ba03daf4fda4e43a6bd38b58bdc02527825cef47b3c55e",
-    "digest": "aa45ce9b7fa7f8b09e6930959ab2723c2eaeebd8f8e3c6fcdee821464ae6e549",
+    "digest": "3d01f795c8df9ca744eabe8440ebfb335c60c23ddc57fe2721314ec36089f848",
     "headings": [
       {
         "id": "隐函数定理的提出和重要性",
@@ -67,12 +67,17 @@
         "id": "极值和最优化问题",
         "name": "极值和最优化问题",
         "level": 2
+      },
+      {
+        "id": "参考文献",
+        "name": "参考文献",
+        "level": 1
       }
     ]
   },
   "c419e783292568aed9e6": {
     "source_sha256": "530a97bb4d2ddcb90900b114579bde023c68faa3dd9a602c68558dfeb1595b9e",
-    "digest": "6a2358862be26607963717c796f684b1b1988db60a1d0343eada470ee1bda548",
+    "digest": "db82ed2ba0f3a092184fb7dccb4a00a02af17c2ae816e1c0313951b273942d50",
     "headings": [
       {
         "id": "通变化电流的线圈在空间的磁场分布",
@@ -82,6 +87,11 @@
       {
         "id": "通变化电流的无限长导线在空间的涡旋电场分布",
         "name": "通变化电流的无限长导线在空间的涡旋电场分布",
+        "level": 1
+      },
+      {
+        "id": "参考文献",
+        "name": "参考文献",
         "level": 1
       }
     ]

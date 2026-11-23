@@ -16,7 +16,7 @@
       "main": "main.tex",
       "preview_sha256": "f2232057e1af0aebc878880ea90199e2a5544f5dd7a873a09724ce22799bb2cb",
       "corrected": true,
-      "web_reading": "files/aa45ce9b7fa7f8b09e6930959ab2723c2eaeebd8f8e3c6fcdee821464ae6e549.html"
+      "web_reading": "files/3d01f795c8df9ca744eabe8440ebfb335c60c23ddc57fe2721314ec36089f848.html"
     },
     {
       "id": "cff61faa3d04bcce4648",
@@ -56,6 +56,39 @@
         26
       ],
       "url": "files/bbc919ee6e8d6c502133d575ee2eaede7c13dbf71736dbb5d9ee61fb19b865b6.pdf"
+    },
+    {
+      "id": "7fa174f6b41a6f914bb5",
+      "title": "2期末复习（选页）",
+      "course": "数学分析（二）",
+      "term": "大一",
+      "type": "复习资料",
+      "format": "LaTeX",
+      "ext": ".zip",
+      "bytes": 324553,
+      "pages": 14,
+      "sha256": "189d72cdc5ac7f743f7ba6e0788e01fdcc221663f97234ca424c4c047bf0e869",
+      "original_pages": 58,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        10,
+        20,
+        21,
+        27,
+        28,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "url": "files/189d72cdc5ac7f743f7ba6e0788e01fdcc221663f97234ca424c4c047bf0e869.zip",
+      "corrected": true,
+      "main": "main.tex",
+      "preview_sha256": "cbe5f2b8ca77a87af760dbbc22a84740511a9c1383467bb4a97cecf37173ad38"
     },
     {
       "id": "4b73c1ce362f275eab64",
@@ -606,19 +639,6 @@
       "pages": 60,
       "sha256": "abdad29e8db2704991679a858d40042c33762a2ee540984f7012e31eaae2e6e5",
       "url": "files/abdad29e8db2704991679a858d40042c33762a2ee540984f7012e31eaae2e6e5.pdf"
-    },
-    {
-      "id": "b4255c39e113ceb9f24b",
-      "title": "微分几何背诵！",
-      "course": "微分几何",
-      "term": "大三上",
-      "type": "复习资料",
-      "format": "PDF",
-      "ext": ".pdf",
-      "bytes": 2833441,
-      "pages": 18,
-      "sha256": "a56090898996b7dbf09973c63a865523fd7d48ea08c7fdaf98ef0a875e597304",
-      "url": "files/a56090898996b7dbf09973c63a865523fd7d48ea08c7fdaf98ef0a875e597304.pdf"
     },
     {
       "id": "19706491d3f1ced9eb7d",
@@ -1254,7 +1274,7 @@
       "main": "main.tex",
       "preview_sha256": "8f14af8cba0fbf062a9d8101d632b9f671992bbd32e85a994d2949effd0ca7c7",
       "corrected": true,
-      "web_reading": "files/6a2358862be26607963717c796f684b1b1988db60a1d0343eada470ee1bda548.html"
+      "web_reading": "files/db82ed2ba0f3a092184fb7dccb4a00a02af17c2ae816e1c0313951b273942d50.html"
     },
     {
       "id": "fc9cb14ed6c8ee7df529",
@@ -1412,6 +1432,22 @@
       "web_reading": "files/05e519049d3a9a37b32ca80f0c31f9d722a355fe7da99b30f015025b7c2e6f0e.html"
     },
     {
+      "id": "822ead88a8c91c55e7d1",
+      "title": "数分",
+      "course": "夏令营",
+      "term": "大三下",
+      "type": "复习资料",
+      "format": "LaTeX",
+      "ext": ".zip",
+      "bytes": 131181,
+      "pages": 16,
+      "sha256": "ba8bebb5604fc17905819c29c5884fa326ca17f9b80261192a5f6df27a411442",
+      "url": "files/ba8bebb5604fc17905819c29c5884fa326ca17f9b80261192a5f6df27a411442.zip",
+      "corrected": true,
+      "main": "822ead88a8c91c55e7d1.tex",
+      "preview_sha256": "049d59a37a4b58fae868b7827457b01e11077b495280f350a7491f67462160ac"
+    },
+    {
       "id": "89b177743fb74d45b1e7",
       "title": "高代",
       "course": "夏令营",
@@ -1444,13 +1480,6 @@
     }
   ],
   "packs": [
-    {
-      "name": "notes-625bcfe4d9cf3cb5.zip",
-      "sha": "625bcfe4d9cf3cb5bec8a5e0ec5c0f71d637e0fd246fd98faf9fe6b20c397c52",
-      "members": {
-        "a56090898996b7dbf09973c63a865523fd7d48ea08c7fdaf98ef0a875e597304.pdf": "a56090898996b7dbf09973c63a865523fd7d48ea08c7fdaf98ef0a875e597304"
-      }
-    },
     {
       "name": "notes-20398a2df00973b9.zip",
       "sha": "20398a2df00973b984fef8177dbfb007d7694490ba51d087a33fc3f94ac92687",
@@ -1551,10 +1580,11 @@
       }
     },
     {
-      "name": "notes-cca45ced7ad278d1.zip",
-      "sha": "cca45ced7ad278d14afc126375b565669060009a1e65bbf83b038577e8ee069d",
+      "name": "notes-7ec13f784856fed5.zip",
+      "sha": "7ec13f784856fed5b63ec7fae4fef706e3a47537ae61d30dc36afcfb7df79ae7",
       "members": {
         "b37e5d2cbcfcc99227ba03daf4fda4e43a6bd38b58bdc02527825cef47b3c55e.zip": "b37e5d2cbcfcc99227ba03daf4fda4e43a6bd38b58bdc02527825cef47b3c55e",
+        "189d72cdc5ac7f743f7ba6e0788e01fdcc221663f97234ca424c4c047bf0e869.zip": "189d72cdc5ac7f743f7ba6e0788e01fdcc221663f97234ca424c4c047bf0e869",
         "d4b03045a46c879d40f8fb60ecc9654c64bceec3f48d9f51f871bc03575d36a3.zip": "d4b03045a46c879d40f8fb60ecc9654c64bceec3f48d9f51f871bc03575d36a3",
         "fb3d5a2f20ac1f1b11954483a42b21f5a76a8cd08c45b23a6d923d2a589818a3.tex": "fb3d5a2f20ac1f1b11954483a42b21f5a76a8cd08c45b23a6d923d2a589818a3",
         "b08136fc77f64cd904ef412b978f25ddf1f09dedd1cfc3d9de22f6f6c69a74cb.zip": "b08136fc77f64cd904ef412b978f25ddf1f09dedd1cfc3d9de22f6f6c69a74cb",
@@ -1576,16 +1606,17 @@
         "a248b857a14683deb08cace67b29f4f0d443b8aa50033627fc8cb317dab5e986.zip": "a248b857a14683deb08cace67b29f4f0d443b8aa50033627fc8cb317dab5e986",
         "4cfdf65cf087633dd812e5d05bd0f85a1375dc97507d58db95c2cba719b808d7.zip": "4cfdf65cf087633dd812e5d05bd0f85a1375dc97507d58db95c2cba719b808d7",
         "1a4634fbc0dc8f9d4f1f9c87f377c77ed5aecfca8ec204b3a82cd0708e73d68d.tex": "1a4634fbc0dc8f9d4f1f9c87f377c77ed5aecfca8ec204b3a82cd0708e73d68d",
+        "ba8bebb5604fc17905819c29c5884fa326ca17f9b80261192a5f6df27a411442.zip": "ba8bebb5604fc17905819c29c5884fa326ca17f9b80261192a5f6df27a411442",
         "320f438b73c6b0cad4cb1b2548c1fa7f047cd0fac7abe1ee1bef9235e5657786.zip": "320f438b73c6b0cad4cb1b2548c1fa7f047cd0fac7abe1ee1bef9235e5657786",
         "d78b1f0ec236b9d71aace3d1499cd176677f2a6127e2af2d4e566373385d6b85.pdf": "d78b1f0ec236b9d71aace3d1499cd176677f2a6127e2af2d4e566373385d6b85"
       }
     },
     {
-      "name": "notes-50140e48888c410e.zip",
-      "sha": "50140e48888c410e8a69bf5eb992861db61ea3e1f980aee88a0d3a73792e69ea",
+      "name": "notes-00be23a16a5a8655.zip",
+      "sha": "00be23a16a5a8655c1af49d95f93bcd275257567f560797bbfdd613f4bc7ff79",
       "members": {
-        "aa45ce9b7fa7f8b09e6930959ab2723c2eaeebd8f8e3c6fcdee821464ae6e549.html": "aa45ce9b7fa7f8b09e6930959ab2723c2eaeebd8f8e3c6fcdee821464ae6e549",
-        "6a2358862be26607963717c796f684b1b1988db60a1d0343eada470ee1bda548.html": "6a2358862be26607963717c796f684b1b1988db60a1d0343eada470ee1bda548",
+        "3d01f795c8df9ca744eabe8440ebfb335c60c23ddc57fe2721314ec36089f848.html": "3d01f795c8df9ca744eabe8440ebfb335c60c23ddc57fe2721314ec36089f848",
+        "db82ed2ba0f3a092184fb7dccb4a00a02af17c2ae816e1c0313951b273942d50.html": "db82ed2ba0f3a092184fb7dccb4a00a02af17c2ae816e1c0313951b273942d50",
         "004d0239a04a8350b9f3584c54d5df5c4c8156d9004b6e399d45b833887465e2.html": "004d0239a04a8350b9f3584c54d5df5c4c8156d9004b6e399d45b833887465e2",
         "769c94c489a93e73f1215b90a6d96bd1a2710973e90a7e60d540e3b03cd2188d.html": "769c94c489a93e73f1215b90a6d96bd1a2710973e90a7e60d540e3b03cd2188d",
         "05e519049d3a9a37b32ca80f0c31f9d722a355fe7da99b30f015025b7c2e6f0e.html": "05e519049d3a9a37b32ca80f0c31f9d722a355fe7da99b30f015025b7c2e6f0e"
@@ -1593,7 +1624,7 @@
     }
   ],
   "reading_bundle": {
-    "name": "reading-copies-4da8db5c338340cd.zip",
-    "sha": "4da8db5c338340cd81c423eb93b2e247df5fb0e22bacdb4c39adcfcca284de08"
+    "name": "reading-copies-b79d851f64e16919.zip",
+    "sha": "b79d851f64e16919cb6f9379c7c52deb6826264d68adaa04f88a7f72fbcd87b5"
   }
 }
