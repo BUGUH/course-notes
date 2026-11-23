@@ -19,45 +19,6 @@
       "web_reading": "files/3d01f795c8df9ca744eabe8440ebfb335c60c23ddc57fe2721314ec36089f848.html"
     },
     {
-      "id": "cff61faa3d04bcce4648",
-      "title": "数学分析2习题课（选页）",
-      "course": "数学分析（二）",
-      "term": "大一",
-      "type": "习题",
-      "format": "PDF",
-      "ext": ".pdf",
-      "bytes": 4768071,
-      "pages": 23,
-      "sha256": "bbc919ee6e8d6c502133d575ee2eaede7c13dbf71736dbb5d9ee61fb19b865b6",
-      "original_pages": 27,
-      "source_pages": [
-        2,
-        3,
-        4,
-        5,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        16,
-        17,
-        18,
-        19,
-        20,
-        21,
-        22,
-        23,
-        24,
-        25,
-        26
-      ],
-      "url": "files/bbc919ee6e8d6c502133d575ee2eaede7c13dbf71736dbb5d9ee61fb19b865b6.pdf"
-    },
-    {
       "id": "7fa174f6b41a6f914bb5",
       "title": "2期末复习（选页）",
       "course": "数学分析（二）",
@@ -140,50 +101,6 @@
       "pages": 26,
       "sha256": "eb65dca66c73a67c8d60146812e6027eea8b919734dd358f31e081f5e3a7bf9f",
       "url": "files/eb65dca66c73a67c8d60146812e6027eea8b919734dd358f31e081f5e3a7bf9f.pdf"
-    },
-    {
-      "id": "2d2949ab0116e8482954",
-      "title": "习题课（手写选页）",
-      "course": "数学分析（三）",
-      "term": "大二上",
-      "type": "习题",
-      "format": "PDF",
-      "ext": ".pdf",
-      "bytes": 7244620,
-      "pages": 28,
-      "sha256": "de52bbab620f7f8f53909186bdf35979f7a68feb40f8185b4e81fa61da160a50",
-      "original_pages": 42,
-      "source_pages": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        20,
-        21,
-        22,
-        23,
-        24,
-        25,
-        29,
-        31,
-        35,
-        36,
-        37,
-        40,
-        41,
-        42
-      ],
-      "url": "files/de52bbab620f7f8f53909186bdf35979f7a68feb40f8185b4e81fa61da160a50.pdf"
     },
     {
       "id": "78d1369f5ef2f4f53bfd",
@@ -945,19 +862,6 @@
       "preview_sha256": "95c96c3be8bdf30310fb9e35a51fc88e48887bf189fc14bc886ae4c8435b47ca"
     },
     {
-      "id": "d09b02d87900d40ba5b1",
-      "title": "作业",
-      "course": "微分方程数值解",
-      "term": "大三下",
-      "type": "作业",
-      "format": "PDF",
-      "ext": ".pdf",
-      "bytes": 6299627,
-      "pages": 36,
-      "sha256": "1cf4bfbb914b66913c3edf773e72d67005b83f023224851ce1c66fe8512efe2e",
-      "url": "files/1cf4bfbb914b66913c3edf773e72d67005b83f023224851ce1c66fe8512efe2e.pdf"
-    },
-    {
       "id": "4fea398ba41ef5145595",
       "title": "数理统计复习",
       "course": "概率论与数理统计",
@@ -1356,19 +1260,6 @@
       "url": "files/b413e819bcc86d37713b770079f1c46b29ede65784e58586747474cf5b4e7b87.pdf"
     },
     {
-      "id": "b1927578fa95f8743c95",
-      "title": "物理课堂任务",
-      "course": "大学物理",
-      "term": "大一",
-      "type": "作业",
-      "format": "PDF",
-      "ext": ".pdf",
-      "bytes": 3923892,
-      "pages": 23,
-      "sha256": "edd921db058672b1372392faa4928aa297840e8ba841f5272548db776bccb991",
-      "url": "files/edd921db058672b1372392faa4928aa297840e8ba841f5272548db776bccb991.pdf"
-    },
-    {
       "id": "ffc4611e430da9b38e6f",
       "title": "强化学习暑校作业 1：近似方法",
       "course": "强化学习",
@@ -1484,15 +1375,13 @@
   ],
   "packs": [
     {
-      "name": "notes-20398a2df00973b9.zip",
-      "sha": "20398a2df00973b984fef8177dbfb007d7694490ba51d087a33fc3f94ac92687",
+      "name": "notes-d7a047ff3022e349.zip",
+      "sha": "d7a047ff3022e3491eb544d41918d80a6e3d982ab851eb970b02595d63283e31",
       "members": {
         "ed13ac8c4faf37f132a96623bf2392f41d44d3d59a2228e6c949fc20a407f837.pdf": "ed13ac8c4faf37f132a96623bf2392f41d44d3d59a2228e6c949fc20a407f837",
         "0652ef14589c43712f390b35ff1dbb75f1bf43b6c3438a4e0433a376cfbe7109.pdf": "0652ef14589c43712f390b35ff1dbb75f1bf43b6c3438a4e0433a376cfbe7109",
-        "1cf4bfbb914b66913c3edf773e72d67005b83f023224851ce1c66fe8512efe2e.pdf": "1cf4bfbb914b66913c3edf773e72d67005b83f023224851ce1c66fe8512efe2e",
         "1752415598f6a18fea26194a27f29b94b6325b8d6212a3265078b734a067109b.pdf": "1752415598f6a18fea26194a27f29b94b6325b8d6212a3265078b734a067109b",
-        "0151d7316fff62dd3dd4d110c39147ff476da04a93082ba691f376135e98d5bc.pdf": "0151d7316fff62dd3dd4d110c39147ff476da04a93082ba691f376135e98d5bc",
-        "de52bbab620f7f8f53909186bdf35979f7a68feb40f8185b4e81fa61da160a50.pdf": "de52bbab620f7f8f53909186bdf35979f7a68feb40f8185b4e81fa61da160a50"
+        "0151d7316fff62dd3dd4d110c39147ff476da04a93082ba691f376135e98d5bc.pdf": "0151d7316fff62dd3dd4d110c39147ff476da04a93082ba691f376135e98d5bc"
       }
     },
     {
@@ -1551,18 +1440,16 @@
       }
     },
     {
-      "name": "notes-2499c38773c5ec80.zip",
-      "sha": "2499c38773c5ec800631011f2f8007b19958deed2d735605883c29f6c00fa437",
+      "name": "notes-a69d821eeb5ea209.zip",
+      "sha": "a69d821eeb5ea209a324416bf464e2e26e51c866545ed7566cc63bac99d5d4b3",
       "members": {
-        "d4292efda3fda2073299a6531685fe22fc62c2efd3629222da761737ad90f2b1.pdf": "d4292efda3fda2073299a6531685fe22fc62c2efd3629222da761737ad90f2b1",
-        "edd921db058672b1372392faa4928aa297840e8ba841f5272548db776bccb991.pdf": "edd921db058672b1372392faa4928aa297840e8ba841f5272548db776bccb991"
+        "d4292efda3fda2073299a6531685fe22fc62c2efd3629222da761737ad90f2b1.pdf": "d4292efda3fda2073299a6531685fe22fc62c2efd3629222da761737ad90f2b1"
       }
     },
     {
-      "name": "notes-b2d11be5b0534053.zip",
-      "sha": "b2d11be5b053405393f2bc956e2cca88cc2b03bc2c6bc8ae32f4710279aea22a",
+      "name": "notes-84db12cb44515e88.zip",
+      "sha": "84db12cb44515e8844680be8c5b13d89ebbab531120e79768de890344dc00ccc",
       "members": {
-        "bbc919ee6e8d6c502133d575ee2eaede7c13dbf71736dbb5d9ee61fb19b865b6.pdf": "bbc919ee6e8d6c502133d575ee2eaede7c13dbf71736dbb5d9ee61fb19b865b6",
         "6846f7d4df3fef43db3d60ddfc3d2e4976eadfe9d468468158e3a75af390e57b.pdf": "6846f7d4df3fef43db3d60ddfc3d2e4976eadfe9d468468158e3a75af390e57b",
         "e8db6f8cb8a45772e6bf2fb5c5c36de0fa07638dcdd4749913b94bc792e33de0.pdf": "e8db6f8cb8a45772e6bf2fb5c5c36de0fa07638dcdd4749913b94bc792e33de0"
       }
