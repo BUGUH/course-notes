@@ -1003,19 +1003,6 @@
       ]
     },
     {
-      "id": "80249085c6a53c2e13cd",
-      "title": "概率论复习",
-      "course": "概率论与数理统计",
-      "term": "大二下",
-      "type": "复习资料",
-      "format": "PDF",
-      "ext": ".pdf",
-      "bytes": 6782771,
-      "pages": 35,
-      "sha256": "0151d7316fff62dd3dd4d110c39147ff476da04a93082ba691f376135e98d5bc",
-      "url": "files/0151d7316fff62dd3dd4d110c39147ff476da04a93082ba691f376135e98d5bc.pdf"
-    },
-    {
       "id": "84ec0d9c8f6c22849786",
       "title": "数理统计笔记（个人课堂笔记选页）",
       "course": "概率论与数理统计",
@@ -1630,11 +1617,10 @@
   ],
   "packs": [
     {
-      "name": "notes-cafe728ff1cea888.zip",
-      "sha": "cafe728ff1cea888bb2ab7b739b5c43b577bb6755766aa7fe9a8a0d0783f2007",
+      "name": "notes-65590bf198d7c686.zip",
+      "sha": "65590bf198d7c6864f125ef8560b2a4fd309a5e55298edd7164fdf8f5d326dee",
       "members": {
-        "1752415598f6a18fea26194a27f29b94b6325b8d6212a3265078b734a067109b.pdf": "1752415598f6a18fea26194a27f29b94b6325b8d6212a3265078b734a067109b",
-        "0151d7316fff62dd3dd4d110c39147ff476da04a93082ba691f376135e98d5bc.pdf": "0151d7316fff62dd3dd4d110c39147ff476da04a93082ba691f376135e98d5bc"
+        "1752415598f6a18fea26194a27f29b94b6325b8d6212a3265078b734a067109b.pdf": "1752415598f6a18fea26194a27f29b94b6325b8d6212a3265078b734a067109b"
       }
     },
     {
