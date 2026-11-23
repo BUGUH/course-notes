@@ -521,65 +521,6 @@
       "reviewed": true
     },
     {
-      "id": "19706491d3f1ced9eb7d",
-      "title": "笔记（选页）",
-      "course": "图论",
-      "term": "大四下",
-      "type": "笔记",
-      "format": "PDF",
-      "ext": ".pdf",
-      "bytes": 13162234,
-      "pages": 43,
-      "sha256": "1ddc59601f71586f059a3f623d92d5fac13a3009ecd86bd3d1aaf13170d13483",
-      "original_pages": 63,
-      "source_pages": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        19,
-        20,
-        21,
-        22,
-        25,
-        27,
-        29,
-        30,
-        35,
-        36,
-        38,
-        44,
-        47,
-        48,
-        49,
-        50,
-        51,
-        52,
-        53,
-        54,
-        55,
-        56,
-        57,
-        60,
-        61,
-        62
-      ],
-      "url": "files/1ddc59601f71586f059a3f623d92d5fac13a3009ecd86bd3d1aaf13170d13483.pdf"
-    },
-    {
       "id": "e37c4ff5264af4705962",
       "title": "作业",
       "course": "常微分方程",
@@ -1514,13 +1455,6 @@
       "sha": "2e28d4b6b67b2ea2d63393a666c3f230fd5b5ea3c4d78e1e8342b1d5e774ff6b",
       "members": {
         "1d067961d97b5048cd1357f47562209ee5085b96d9926e51b6daa23f5bb0ec7a.pdf": "1d067961d97b5048cd1357f47562209ee5085b96d9926e51b6daa23f5bb0ec7a"
-      }
-    },
-    {
-      "name": "notes-0390e0c21cf30265.zip",
-      "sha": "0390e0c21cf30265ce7628731cf51e22f6f0ed9d15178f270f1058e035ca8ac4",
-      "members": {
-        "1ddc59601f71586f059a3f623d92d5fac13a3009ecd86bd3d1aaf13170d13483.pdf": "1ddc59601f71586f059a3f623d92d5fac13a3009ecd86bd3d1aaf13170d13483"
       }
     },
     {
