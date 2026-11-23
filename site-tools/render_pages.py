@@ -58,9 +58,14 @@ def article(docs,r,group,previews,meta,fragment):
     top+='<div class="rule"></div>'
     def dl(url,title,label):return f'<a href="../{esc(url)}" download="{esc(title)}">{esc(label)}</a>'
     links=[dl(r["url"],r["title"]+r["ext"],f'下载原件 · {r["format"]} · {size(r["bytes"])}')]
+    pdf_label="原稿"
     if r.get("corrected"):
         links=[dl(r["url"],r["title"]+r["ext"],f'下载订正版源文件 · {size(r["bytes"])}')]
-    if pdf:links.insert(0,f'<a href="../{esc(pdf)}">打开{"订正" if r.get("corrected") else "原稿"} PDF</a>')
+        pdf_label="订正"
+    elif r.get("reviewed"):
+        links=[dl(r["url"],r["title"]+r["ext"],f'下载已校排版稿 · {r["format"]} · {size(r["bytes"])}')]
+        pdf_label="已校"
+    if pdf:links.insert(0,f'<a href="../{esc(pdf)}">打开{pdf_label} PDF</a>')
     if t:
         links+=[dl(t["pdf"],r["title"]+"-排版.pdf","下载排版 PDF"),dl(t["source"],r["title"]+"-排版."+t["source"].rsplit(".",1)[-1],"下载排版源文件")]
     download='<section class="downloads" id="downloads"><h2>文件下载</h2><div class="actions">'+"".join(links)+'</div></section>'
@@ -87,6 +92,7 @@ def article(docs,r,group,previews,meta,fragment):
     for extra in [("downloads","文件下载",1)]:contents.append(extra)
     contents_html="".join(f'<a href="#{esc(i)}" class="depth-{min(3,max(1,int(level)))}">{esc(name)}</a>' for i,name,level in contents)
     if r.get("corrected"):html=html.replace('>原稿</span>','>订正版</span>')
+    elif r.get("reviewed"):html=html.replace('>原稿</span>','>已校排版稿</span>')
     toc='<aside class="toc" aria-label="文章目录"><details open><summary>目录</summary><nav>'+contents_html+'</nav></details></aside>'
     def adjacent(i,label):
         if not 0<=i<len(group):return ""
