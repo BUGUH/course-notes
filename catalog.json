@@ -242,6 +242,38 @@
       "url": "files/6846f7d4df3fef43db3d60ddfc3d2e4976eadfe9d468468158e3a75af390e57b.pdf"
     },
     {
+      "id": "42698e8848f87b0c05b6",
+      "title": "高代期中复习（选页）",
+      "course": "高等代数",
+      "term": "大一",
+      "type": "复习资料",
+      "format": "LaTeX",
+      "ext": ".zip",
+      "bytes": 431931,
+      "pages": 13,
+      "sha256": "843fb891f0a96dd04b8a136b54624275d534ec6b78628e923b80945038b56a54",
+      "original_pages": 27,
+      "source_pages": [
+        4,
+        5,
+        15,
+        16,
+        17,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "url": "files/843fb891f0a96dd04b8a136b54624275d534ec6b78628e923b80945038b56a54.zip",
+      "corrected": true,
+      "main": "42698e8848f87b0c05b6.tex",
+      "preview_sha256": "ada923dc91835d5fa42d8539823a54293566e3844b835aadae62949fba281176"
+    },
+    {
       "id": "46be1b99329cd2964bc4",
       "title": "小学期高代笔记（选页）",
       "course": "高等代数",
@@ -1535,13 +1567,14 @@
       }
     },
     {
-      "name": "notes-83d052f27b3186ef.zip",
-      "sha": "83d052f27b3186ef84988436eff012fb4c0f3e127e6cee8831b69d747d211493",
+      "name": "notes-a7fb30156beb3214.zip",
+      "sha": "a7fb30156beb3214239a6d87f26c0fd1860e2b8b8d3f66af1eb5f31680ab7f6f",
       "members": {
         "b37e5d2cbcfcc99227ba03daf4fda4e43a6bd38b58bdc02527825cef47b3c55e.zip": "b37e5d2cbcfcc99227ba03daf4fda4e43a6bd38b58bdc02527825cef47b3c55e",
         "d4b03045a46c879d40f8fb60ecc9654c64bceec3f48d9f51f871bc03575d36a3.zip": "d4b03045a46c879d40f8fb60ecc9654c64bceec3f48d9f51f871bc03575d36a3",
         "fb3d5a2f20ac1f1b11954483a42b21f5a76a8cd08c45b23a6d923d2a589818a3.tex": "fb3d5a2f20ac1f1b11954483a42b21f5a76a8cd08c45b23a6d923d2a589818a3",
         "b08136fc77f64cd904ef412b978f25ddf1f09dedd1cfc3d9de22f6f6c69a74cb.zip": "b08136fc77f64cd904ef412b978f25ddf1f09dedd1cfc3d9de22f6f6c69a74cb",
+        "843fb891f0a96dd04b8a136b54624275d534ec6b78628e923b80945038b56a54.zip": "843fb891f0a96dd04b8a136b54624275d534ec6b78628e923b80945038b56a54",
         "4ba14eb85acfeba8755c14f0d4a2e3ce041d9ce2b1ff1587699b02c632933f97.zip": "4ba14eb85acfeba8755c14f0d4a2e3ce041d9ce2b1ff1587699b02c632933f97",
         "a8f74e59ccc3f27b2bfb55b8effbb31c994bb6630635fbdac89d16fc16e3da78.tex": "a8f74e59ccc3f27b2bfb55b8effbb31c994bb6630635fbdac89d16fc16e3da78",
         "f611ea780761c79e73269e1af8629e83b93bb0e8a291d6c1c4b6ecbe66079c85.zip": "f611ea780761c79e73269e1af8629e83b93bb0e8a291d6c1c4b6ecbe66079c85",
@@ -1572,7 +1605,7 @@
     }
   ],
   "reading_bundle": {
-    "name": "reading-copies-2c68492c4c56611e.zip",
-    "sha": "2c68492c4c56611ef9cd163cf8bac43c62ebe905d480c29038a2933a7804f507"
+    "name": "reading-copies-50067921986844cd.zip",
+    "sha": "50067921986844cd67be10ba31174f5b11529afc4788971150cc247dcfd75bf0"
   }
 }
