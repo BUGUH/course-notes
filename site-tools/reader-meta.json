@@ -77,6 +77,10 @@
     "ratio": 1.41429,
     "outline": []
   },
+  "4b73c1ce362f275eab64": {
+    "ratio": 0.70708,
+    "outline": []
+  },
   "049c3a44f7682de2f814": {
     "ratio": 0.70708,
     "outline": []
@@ -91,10 +95,6 @@
   },
   "78d1369f5ef2f4f53bfd": {
     "ratio": 0.70708,
-    "outline": []
-  },
-  "d5ebaeac18dddde3fae9": {
-    "ratio": 0.70496,
     "outline": []
   },
   "32a0f05605c386f7c3ae": {
@@ -268,5 +268,85 @@
   "89b177743fb74d45b1e7": {
     "ratio": 0.70708,
     "outline": []
+  },
+  "3dbf400f974d7988744d": {
+    "ratio": 0.70708,
+    "outline": [
+      {
+        "label": "E-I平衡网络基本模型",
+        "page": 1,
+        "level": 1
+      },
+      {
+        "label": "LIF模型简介",
+        "page": 1,
+        "level": 2
+      },
+      {
+        "label": "E-I平衡网络的基本模型",
+        "page": 3,
+        "level": 2
+      },
+      {
+        "label": "异质神经元网络中的平衡活动核",
+        "page": 4,
+        "level": 1
+      },
+      {
+        "label": "同构和异构网络的平衡状态概念",
+        "page": 4,
+        "level": 2
+      },
+      {
+        "label": "同质网络动力学的实验",
+        "page": 5,
+        "level": 2
+      },
+      {
+        "label": "延伸：异质网络活跃核心的分析",
+        "page": 7,
+        "level": 2
+      },
+      {
+        "label": "感觉系统中的稀疏性与压缩编码",
+        "page": 9,
+        "level": 1
+      },
+      {
+        "label": "基于兴奋抑制平衡网络的图像编码与解码",
+        "page": 11,
+        "level": 1
+      },
+      {
+        "label": "网络参数对图片重建质量的影响",
+        "page": 13,
+        "level": 1
+      },
+      {
+        "label": "J对图片重建的影响",
+        "page": 13,
+        "level": 2
+      },
+      {
+        "label": "对图片重建的影响",
+        "page": 16,
+        "level": 2
+      },
+      {
+        "label": "目前的模拟呈现出的局限性与改进",
+        "page": 16,
+        "level": 1
+      },
+      {
+        "label": "项目总结",
+        "page": 17,
+        "level": 1
+      },
+      {
+        "label": "参考文献",
+        "page": 17,
+        "level": 1
+      }
+    ]
   }
 }

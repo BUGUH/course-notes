@@ -88,6 +88,22 @@
       "url": "files/5a8d738c14c54857eb2b20ccbd29e740eb26d98f4c1a9efa0a509427345a0941.pdf"
     },
     {
+      "id": "4b73c1ce362f275eab64",
+      "title": "定理和复习",
+      "course": "数学分析（二）",
+      "term": "大一",
+      "type": "复习资料",
+      "format": "LaTeX",
+      "ext": ".zip",
+      "bytes": 1028390,
+      "pages": 17,
+      "sha256": "d4b03045a46c879d40f8fb60ecc9654c64bceec3f48d9f51f871bc03575d36a3",
+      "url": "files/d4b03045a46c879d40f8fb60ecc9654c64bceec3f48d9f51f871bc03575d36a3.zip",
+      "corrected": true,
+      "main": "main.tex",
+      "preview_sha256": "846c13c6a5412b5bd0a92b286798329f9a8bc72cac0668da74790843a995a814"
+    },
+    {
       "id": "049c3a44f7682de2f814",
       "title": "待讨论的题目（选页）",
       "course": "数学分析（二）",
@@ -181,19 +197,6 @@
       "corrected": true,
       "main": "main.tex",
       "preview_sha256": "db1d68e0bdff8ebe317043ec7cf19a6f1fc0631a8b59a32b2e2a78530acdedae"
-    },
-    {
-      "id": "d5ebaeac18dddde3fae9",
-      "title": "期末复习",
-      "course": "数学分析（三）",
-      "term": "大二上",
-      "type": "复习资料",
-      "format": "PDF",
-      "ext": ".pdf",
-      "bytes": 13614157,
-      "pages": 56,
-      "sha256": "1c8dd9f1919cd28fe19f3d80219f5e5f728c0caafcde5c366aebb0c2e9d7cb72",
-      "url": "files/1c8dd9f1919cd28fe19f3d80219f5e5f728c0caafcde5c366aebb0c2e9d7cb72.pdf"
     },
     {
       "id": "32a0f05605c386f7c3ae",
@@ -1403,6 +1406,21 @@
       "pages": 16,
       "sha256": "faf20162f1e9b666ff3a28954bcaf7cd53662e3e3b3d2cd36130572ab47eff87",
       "url": "files/faf20162f1e9b666ff3a28954bcaf7cd53662e3e3b3d2cd36130572ab47eff87.pdf"
+    },
+    {
+      "id": "3dbf400f974d7988744d",
+      "title": "E-I 平衡网络与图像的重构",
+      "course": "专业研讨课（三）",
+      "term": "Overleaf",
+      "type": "大作业",
+      "format": "PDF",
+      "ext": ".pdf",
+      "bytes": 3372579,
+      "pages": 18,
+      "sha256": "d78b1f0ec236b9d71aace3d1499cd176677f2a6127e2af2d4e566373385d6b85",
+      "url": "files/d78b1f0ec236b9d71aace3d1499cd176677f2a6127e2af2d4e566373385d6b85.pdf",
+      "reviewed": true,
+      "coauthored": true
     }
   ],
   "packs": [
@@ -1446,11 +1464,10 @@
       }
     },
     {
-      "name": "notes-cfb0f937924b9796.zip",
-      "sha": "cfb0f937924b97960805579717bb1aa209b539defc3da735928a7d53e09fcae8",
+      "name": "notes-79930616febc893e.zip",
+      "sha": "79930616febc893eb7fa07060946a3520c6697af87b0b72e02992be80dd92e8e",
       "members": {
         "237ac9026a119b1f35af33ce820b364aeed99af9410462736f8da9adfed9df1a.pdf": "237ac9026a119b1f35af33ce820b364aeed99af9410462736f8da9adfed9df1a",
-        "1c8dd9f1919cd28fe19f3d80219f5e5f728c0caafcde5c366aebb0c2e9d7cb72.pdf": "1c8dd9f1919cd28fe19f3d80219f5e5f728c0caafcde5c366aebb0c2e9d7cb72",
         "5e419277e4d966bdb0104aab46b6b4c8a26620a9e6b6602aa4ee5d72dcb63e9e.pdf": "5e419277e4d966bdb0104aab46b6b4c8a26620a9e6b6602aa4ee5d72dcb63e9e"
       }
     },
@@ -1518,10 +1535,11 @@
       }
     },
     {
-      "name": "notes-9f34e9de9f9f3893.zip",
-      "sha": "9f34e9de9f9f3893d6b5d870fa59f4b280dfe450771229c98d42d4747335f487",
+      "name": "notes-83d052f27b3186ef.zip",
+      "sha": "83d052f27b3186ef84988436eff012fb4c0f3e127e6cee8831b69d747d211493",
       "members": {
         "b37e5d2cbcfcc99227ba03daf4fda4e43a6bd38b58bdc02527825cef47b3c55e.zip": "b37e5d2cbcfcc99227ba03daf4fda4e43a6bd38b58bdc02527825cef47b3c55e",
+        "d4b03045a46c879d40f8fb60ecc9654c64bceec3f48d9f51f871bc03575d36a3.zip": "d4b03045a46c879d40f8fb60ecc9654c64bceec3f48d9f51f871bc03575d36a3",
         "fb3d5a2f20ac1f1b11954483a42b21f5a76a8cd08c45b23a6d923d2a589818a3.tex": "fb3d5a2f20ac1f1b11954483a42b21f5a76a8cd08c45b23a6d923d2a589818a3",
         "b08136fc77f64cd904ef412b978f25ddf1f09dedd1cfc3d9de22f6f6c69a74cb.zip": "b08136fc77f64cd904ef412b978f25ddf1f09dedd1cfc3d9de22f6f6c69a74cb",
         "4ba14eb85acfeba8755c14f0d4a2e3ce041d9ce2b1ff1587699b02c632933f97.zip": "4ba14eb85acfeba8755c14f0d4a2e3ce041d9ce2b1ff1587699b02c632933f97",
@@ -1538,7 +1556,8 @@
         "6eb2f5eafdbf464ce31117739eba49f414649cf2855d3864ed4cb8ba426997ed.zip": "6eb2f5eafdbf464ce31117739eba49f414649cf2855d3864ed4cb8ba426997ed",
         "a248b857a14683deb08cace67b29f4f0d443b8aa50033627fc8cb317dab5e986.zip": "a248b857a14683deb08cace67b29f4f0d443b8aa50033627fc8cb317dab5e986",
         "4cfdf65cf087633dd812e5d05bd0f85a1375dc97507d58db95c2cba719b808d7.zip": "4cfdf65cf087633dd812e5d05bd0f85a1375dc97507d58db95c2cba719b808d7",
-        "1a4634fbc0dc8f9d4f1f9c87f377c77ed5aecfca8ec204b3a82cd0708e73d68d.tex": "1a4634fbc0dc8f9d4f1f9c87f377c77ed5aecfca8ec204b3a82cd0708e73d68d"
+        "1a4634fbc0dc8f9d4f1f9c87f377c77ed5aecfca8ec204b3a82cd0708e73d68d.tex": "1a4634fbc0dc8f9d4f1f9c87f377c77ed5aecfca8ec204b3a82cd0708e73d68d",
+        "d78b1f0ec236b9d71aace3d1499cd176677f2a6127e2af2d4e566373385d6b85.pdf": "d78b1f0ec236b9d71aace3d1499cd176677f2a6127e2af2d4e566373385d6b85"
       }
     },
     {
@@ -1553,7 +1572,7 @@
     }
   ],
   "reading_bundle": {
-    "name": "reading-copies-cb49f5b475494a09.zip",
-    "sha": "cb49f5b475494a096c4187eabbdfc147bc2c2b7f951564861e796445d243f4d7"
+    "name": "reading-copies-2c68492c4c56611e.zip",
+    "sha": "2c68492c4c56611ef9cd163cf8bac43c62ebe905d480c29038a2933a7804f507"
   }
 }
