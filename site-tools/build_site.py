@@ -32,8 +32,14 @@ def restore(pack):
         archive = Path(folder)/"pack.zip"
         for attempt in range(4):
             try:
-                with urllib.request.urlopen(url, timeout=180) as source, archive.open("wb") as out:
-                    shutil.copyfileobj(source,out)
+                local=os.environ.get("COURSE_NOTES_PACKS_DIR")
+                if local:
+                    source=Path(local)/pack["name"]
+                    if not source.is_file():raise FileNotFoundError(source)
+                    shutil.copyfile(source,archive)
+                else:
+                    with urllib.request.urlopen(url, timeout=180) as source, archive.open("wb") as out:
+                        shutil.copyfileobj(source,out)
                 if sha(archive) != pack["sha"]: raise ValueError("Bundle digest mismatch")
                 break
             except OSError:
@@ -139,6 +145,20 @@ def run():
         (DOCS/directory).mkdir(exist_ok=True,parents=True)
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
         list(pool.map(restore,CAT["packs"]))
+    # Move the one PDF payload to its established reading URL; do not make a
+    # second copy under files/. Source fingerprints remain separate metadata.
+    relocated=set()
+    for row in CAT["items"]:
+        name=row.get("asset_name")
+        if not name:continue
+        if row["format"]!="PDF" or not re.fullmatch(r"[0-9a-f]{20}",row["id"]):
+            raise ValueError("Invalid reading-copy identity")
+        if name!=row["sha256"]+".pdf" or row["url"]!="previews/"+row["id"]+".pdf" or name in relocated:
+            raise ValueError("Invalid reading-copy location")
+        source=DOCS/"files"/name;target=DOCS/row["url"]
+        if sha(source)!=row["sha256"]:raise ValueError("Reading-copy digest mismatch")
+        source.replace(target)
+        relocated.add(name)
     previews = {r["id"]:r["existing_preview"] for r in CAT["items"] if r.get("existing_preview")}
     tasks = [r for r in CAT["items"] if r["format"]=="LaTeX" and r["id"] not in previews]
     with tempfile.TemporaryDirectory() as folder:

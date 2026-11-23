@@ -60,7 +60,7 @@ def article(docs,r,group,previews,meta,fragment):
     links=[dl(r["url"],r["title"]+r["ext"],f'下载原件 · {r["format"]} · {size(r["bytes"])}')]
     pdf_label="原稿"
     if r.get("corrected"):
-        links=[dl(r["url"],r["title"]+r["ext"],f'下载订正版源文件 · {size(r["bytes"])}')]
+        links=[dl(r["url"],r["title"]+r["ext"],f'下载订正版 · {r["format"]} · {size(r["bytes"])}')]
         pdf_label="订正"
     elif r.get("reviewed"):
         links=[dl(r["url"],r["title"]+r["ext"],f'下载已校排版稿 · {r["format"]} · {size(r["bytes"])}')]
@@ -126,12 +126,13 @@ def make(docs,catalog,previews):
             rid=r["id"];fmt=r["format"];subject=subjects.get(c,"应用与专题")
             editions=[fmt]
             if rid in previews and "PDF" not in editions:editions.append("PDF")
-            if r.get("transcription") or r.get("corrected"):editions.extend(v for v in ("LaTeX","PDF","已校对的 LaTeX 排版稿") if v not in editions)
+            if r.get("transcription") or r.get("corrected") or r.get("typeset_source_sha256"):
+                editions.extend(v for v in ("PDF","已校对的 LaTeX 排版稿") if v not in editions)
             byline=" · ".join(filter(None,[r.get("term"),r["type"],"订正版" if r.get("corrected") else "已校排版" if r.get("transcription") else None]))
             key=" ".join([c,subject,r["title"],byline,*editions]).lower()
             body+=f'<div class="entry" data-subject="{esc(subject)}" data-course="{esc(c)}" data-type="{esc(r["type"])}" data-fmt="{esc(fmt)}" data-editions="{esc("|".join(editions))}" data-search="{esc(key)}"><div><a class="title" href="articles/{rid}.html">{esc(r["title"])}</a><div class="sub">{esc(byline)}</div></div><small>{esc(fmt)} · {size(r["bytes"])}</small></div>'
             fragment=fragments.get(rid)
-            expected=r.get("transcription",{}).get("source",r["url"]).rsplit("/",1)[-1].split(".")[0]
+            expected=r.get("typeset_source_sha256") or r.get("transcription",{}).get("source",r["url"]).rsplit("/",1)[-1].split(".")[0]
             if fragment and fragment["source_sha256"]==expected and r.get("web_reading")=="files/"+fragment["digest"]+".html":
                 import hashlib
                 raw=(docs/r["web_reading"]).read_bytes()
