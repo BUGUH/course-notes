@@ -258,6 +258,18 @@
         "page": 2,
         "level": 1
       }
+    ],
+    "chapter_aliases": [
+      {
+        "slug": "b91e57f35b8ec6ef4237-s9cac962dce29",
+        "target_id": "dynamical-system",
+        "page": 1
+      },
+      {
+        "slug": "b91e57f35b8ec6ef4237-s0024e02d2a7c",
+        "target_id": "important-consequence-of-mu-being-ergodic",
+        "page": 2
+      }
     ]
   },
   "4fea398ba41ef5145595": {

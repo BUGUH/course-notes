@@ -186,6 +186,9 @@ def article(docs,r,group,previews,meta,fragment,discovery=None,book=None,chapter
     contents=[];html=""
     if fragment:
         html=fragment["html"];contents=[(sec["id"],sec["name"],sec["level"]) for sec in fragment["headings"]]
+        for alias in meta.get(rid,{}).get("chapter_aliases",[]):
+            pattern=r'(<h[2-6]\b[^>]*\bid="'+re.escape(alias["target_id"])+r'"[^>]*>)'
+            html=re.sub(pattern,lambda match:f'<span id="page-{int(alias["page"])}"></span>'+match[0],html)
         html=re.sub(r'(<math\s+display="(block|inline)"[\s\S]*?</math>)',
                     lambda match:f'<span class="math {"display" if match[2]=="block" else "inline"}">{match[1]}</span>',html)
         html='<div class="prose">'+html+'</div>'
@@ -275,6 +278,15 @@ def make(docs,catalog,previews):
                 for ch in chapters:
                     part={"html":ch["html"],"headings":ch["headings"]} if fragment else None
                     article(docs,r,group,previews,meta,part,discovery.get(rid),chapters,ch)
+                if fragment:
+                    owners={h["id"]:ch["slug"] for ch in chapters for h in ch["headings"]}
+                    for alias in meta.get(rid,{}).get("chapter_aliases",[]):
+                        target=owners[alias["target_id"]]+".html#"+quote(alias["target_id"],safe="")
+                        if alias["slug"] in {ch["slug"] for ch in chapters}:continue
+                        if not re.fullmatch(r"[0-9a-f]{20}-s[0-9a-f]{12}",alias["slug"]):raise ValueError("Invalid old chapter address")
+                        alias_body=f'<section class="index-title"><h1>{esc(r["title"])}</h1><p>章节地址已更新。<a href="{esc(target)}">继续阅读</a></p></section>'
+                        alias_page=document(r["title"],alias_body,"../").replace('</head>',f'<link rel="canonical" href="{esc(target)}"><meta http-equiv="refresh" content="0; url={esc(target)}"></head>')
+                        (docs/"articles"/(alias["slug"]+".html")).write_text(alias_page,encoding="utf8")
         body+='</section>'
     (docs/"index.html").write_text(document("课程笔记",body+'<script defer src="index.js"></script>'),encoding="utf8")
     courses='<section class="index-title"><h1>课程</h1></section>'

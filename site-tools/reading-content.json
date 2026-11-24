@@ -248,5 +248,56 @@
         "level": 1
       }
     ]
+  },
+  "b91e57f35b8ec6ef4237": {
+    "source_sha256": "c2ae6942c01306dfbb902475390091e793e4c5dd20c3d3924198858e7cb29988",
+    "digest": "00f2df251fbf4b856555052ccc32f2532c2b2f5d46c7c6a7790f3024d25a76f2",
+    "headings": [
+      {
+        "id": "dynamical-system",
+        "name": "Dynamical system",
+        "level": 1
+      },
+      {
+        "id": "ergodic-theoryt-invariant-measure",
+        "name": "Ergodic theory：T-invariant measure",
+        "level": 1
+      },
+      {
+        "id": "poincaré-recurrence-theorem",
+        "name": "Poincaré recurrence theorem",
+        "level": 1
+      },
+      {
+        "id": "ergodicity",
+        "name": "Ergodicity",
+        "level": 1
+      },
+      {
+        "id": "exercise",
+        "name": "Exercise",
+        "level": 1
+      },
+      {
+        "id": "birkhoff-ergodic-theorem",
+        "name": "Birkhoff ergodic theorem",
+        "level": 1
+      },
+      {
+        "id": "important-consequence-of-mu-being-ergodic",
+        "name": "Important consequence of μ being ergodic",
+        "level": 1
+      },
+      {
+        "id": "topologically-transitive-mixing",
+        "name": "Topologically transitive & mixing",
+        "level": 1
+      },
+      {
+        "id": "entropy原稿的直观计数随记",
+        "name": "Entropy：原稿的直观计数随记",
+        "level": 1
+      }
+    ]
   }
 }
