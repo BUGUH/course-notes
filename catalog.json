@@ -239,19 +239,6 @@
       "url": "files/5e419277e4d966bdb0104aab46b6b4c8a26620a9e6b6602aa4ee5d72dcb63e9e.pdf"
     },
     {
-      "id": "4ac8088ea8d59e82b0c4",
-      "title": "笔记",
-      "course": "拓扑学",
-      "term": "大三上",
-      "type": "笔记",
-      "format": "PDF",
-      "ext": ".pdf",
-      "bytes": 18560345,
-      "pages": 83,
-      "sha256": "f9af99f870c4f7f9e3962a4b1f8b1bca61fd3bc25d8d6ea7a36870f31df6665c",
-      "url": "files/f9af99f870c4f7f9e3962a4b1f8b1bca61fd3bc25d8d6ea7a36870f31df6665c.pdf"
-    },
-    {
       "id": "b4255c39e113ceb9f24b",
       "title": "微分几何背诵！",
       "course": "微分几何",
@@ -1146,13 +1133,6 @@
       "members": {
         "23f5d9b2d75d16e8b14169574a9d1566591a394d452c081b60f84993f2ebfe7d.pdf": "23f5d9b2d75d16e8b14169574a9d1566591a394d452c081b60f84993f2ebfe7d",
         "811379d171f676f926a5e71120ded1dc7103139686e8b6ef4db5db8e7981c304.pdf": "811379d171f676f926a5e71120ded1dc7103139686e8b6ef4db5db8e7981c304"
-      }
-    },
-    {
-      "name": "notes-c25bdd8db124ea63.zip",
-      "sha": "c25bdd8db124ea637c1c307ca099fabd7c8744f21b3ad785119784c6c9ba7747",
-      "members": {
-        "f9af99f870c4f7f9e3962a4b1f8b1bca61fd3bc25d8d6ea7a36870f31df6665c.pdf": "f9af99f870c4f7f9e3962a4b1f8b1bca61fd3bc25d8d6ea7a36870f31df6665c"
       }
     },
     {
