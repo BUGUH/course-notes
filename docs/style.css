@@ -37,10 +37,12 @@ h1 {
   display: inline-block;
   max-width: 100%;
   overflow-x: auto;
+  overflow-y: hidden;
   vertical-align: middle;
 }
 
 /* Concept discovery and full-text results. */
+.chapter-list{padding-left:1.7rem;max-width:56rem}.chapter-list li{padding:.25rem 0}.chapter-list .listlink small{flex-shrink:0}.whole-book{display:inline-block;font-size:.86rem;margin:.6rem}.book-series{margin-left:.45rem;max-width:100%;overflow-wrap:anywhere}.pubmeta{flex-wrap:wrap}.chapter-list .listlink span{overflow-wrap:anywhere}.chapter-list .listlink{min-width:0}
 .filters{grid-template-columns:repeat(5,minmax(0,1fr))}.filters label:first-child{grid-column:1/-1}.search-excerpt{font-size:.88rem;line-height:1.65;color:var(--muted);margin:.45rem 0 .15rem;max-width:64ch;overflow-wrap:anywhere}.concept{background:var(--teal-bg)}
 @media(max-width:850px){.filters{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:650px){.head-inner{flex-wrap:wrap;padding-top:.45rem;padding-bottom:.45rem}.mainnav{order:3;width:100%;justify-content:center}.linkgrid .listlink{min-width:0;overflow-wrap:anywhere}}

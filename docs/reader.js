@@ -28,12 +28,15 @@ if (!doc) {
 }
 async function showOriginal(host) {
   const count = Number(host.dataset.pages);
+  const first = Number(host.dataset.startPage || 1);
+  const last = Number(host.dataset.endPage || count);
+  if (!Number.isInteger(first) || !Number.isInteger(last) || first < 1 || last > count || first > last) throw Error('Invalid chapter range');
   const stack = document.getElementById('sheets');
   const number = document.getElementById('page-number');
   const status = document.getElementById('reader-status');
   const pages = [];
   const holders = document.createDocumentFragment();
-  for (let n=1;n<=count;n++) {
+  for (let n=first;n<=last;n++) {
     const el=document.createElement('div');
     el.className='sheet'; el.id='page-'+n; el.dataset.n=n;
     el.setAttribute('role','img');el.setAttribute('aria-label','第 '+n+' 页原文');
@@ -42,8 +45,8 @@ async function showOriginal(host) {
   }
   stack.append(holders);
   function go(n) {
-    if (!Number.isInteger(n)||n<1||n>count) return;
-    const page=pages[n-1];
+    if (!Number.isInteger(n)||n<first||n>last) {number.value=String(first);return;}
+    const page=pages[n-first];
     page.scrollIntoView({block:'start'});
     history.replaceState(null,'','#'+page.id);
     number.value=String(n);
