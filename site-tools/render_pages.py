@@ -47,7 +47,9 @@ def load_discovery(rows):
     if not path.exists():return {}
     data=json.loads(path.read_text(encoding="utf8"))
     catalogue=Path(__file__).resolve().parent.parent/"catalog.json"
-    if hashlib.sha256(catalogue.read_bytes()).hexdigest()!=data["catalog_sha256"]:
+    canonical=json.dumps(json.loads(catalogue.read_text(encoding="utf-8-sig")),
+                         ensure_ascii=False,sort_keys=True,separators=(",",":")).encode("utf8")
+    if hashlib.sha256(canonical).hexdigest()!=data["catalog_content_sha256"]:
         raise ValueError("Rebuild discovery data for the current catalogue")
     documents=data["documents"]
     if set(documents)!={r["id"] for r in rows}:raise ValueError("Discovery scope mismatch")
