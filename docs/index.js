@@ -49,10 +49,11 @@ function refresh(save) {
         const plain = page.text.replace(/\s+/g, ' ').trim();
         const position = plain.toLocaleLowerCase().indexOf(get('q').value.trim().toLocaleLowerCase());
         const start = Math.max(0, position - 45);
-        excerpt.textContent = (record.pdf_reader ? '第 ' + page.page + ' 页 · ' : '') +
+        const located = record.pdf_reader || (record.page_anchors || []).includes(page.page);
+        excerpt.textContent = (located ? 'PDF 第 ' + page.page + ' 页 · ' : '') +
           (start ? '…' : '') + plain.slice(start, start + 160) + (plain.length > start + 160 ? '…' : '');
         excerpt.hidden = false;
-        if (record.pdf_reader) title.setAttribute('href', row.dataset.baseHref + '#page-' + page.page);
+        if (located) title.setAttribute('href', row.dataset.baseHref + '#page-' + page.page);
       }
     }
   }

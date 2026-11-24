@@ -2,6 +2,7 @@ const toc = document.querySelector('.toc details');
 if (toc && matchMedia('(max-width:850px)').matches) toc.open = false;
 const tocLinks = [...document.querySelectorAll('.toc a')];
 for (const a of tocLinks) a.addEventListener('click', () => {
+  highlight(decodeURIComponent(a.hash.slice(1)));
   if (!toc || !matchMedia('(max-width:850px)').matches) return;
   toc.open = false;
   requestAnimationFrame(() => document.getElementById(decodeURIComponent(a.hash.slice(1)))?.scrollIntoView({block:'start'}));

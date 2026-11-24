@@ -264,7 +264,8 @@
       "corrected": true,
       "typeset_source_sha256": "a8f74e59ccc3f27b2bfb55b8effbb31c994bb6630635fbdac89d16fc16e3da78",
       "asset_name": "91f97ec420c55aa9a3a78ab2488b403286bd057602f319da81986c30f0ea02fb.pdf",
-      "reviewed": true
+      "reviewed": true,
+      "web_reading": "files/badabf7e7ea8c8b3c00e214700850293e0dde3f75c65c9812003195a4b09f2ef.html"
     },
     {
       "id": "650784d13add39fe1603",
@@ -683,7 +684,8 @@
       "corrected": true,
       "typeset_source_sha256": "d0d95e6f0bdd88a15148d3788b69767f81d456ccb3ed3ba7ea1c7c72ff824e0d",
       "asset_name": "2b50ab0bcd7658884c2ca2c1fdf3590761fa560d161bc486343a278fe79e37b5.pdf",
-      "reviewed": true
+      "reviewed": true,
+      "web_reading": "files/7852908fc0162c4634373f1dc015474e2f2bfb7e28b90e71be92af04af3843b2.html"
     },
     {
       "id": "e3d692abbe829de92939",
@@ -968,11 +970,13 @@
       }
     },
     {
-      "name": "notes-a4622e311092715d.zip",
-      "sha": "a4622e311092715d1f76c8a20a348600f5b43a879cc2ca9510adec28b5faaa1d",
+      "name": "notes-0508d66c5fc4ddff.zip",
+      "sha": "0508d66c5fc4ddffd5bda18c33e02864efa6169b9d06739328bf74e181094130",
       "members": {
         "3d01f795c8df9ca744eabe8440ebfb335c60c23ddc57fe2721314ec36089f848.html": "3d01f795c8df9ca744eabe8440ebfb335c60c23ddc57fe2721314ec36089f848",
+        "badabf7e7ea8c8b3c00e214700850293e0dde3f75c65c9812003195a4b09f2ef.html": "badabf7e7ea8c8b3c00e214700850293e0dde3f75c65c9812003195a4b09f2ef",
         "00f2df251fbf4b856555052ccc32f2532c2b2f5d46c7c6a7790f3024d25a76f2.html": "00f2df251fbf4b856555052ccc32f2532c2b2f5d46c7c6a7790f3024d25a76f2",
+        "7852908fc0162c4634373f1dc015474e2f2bfb7e28b90e71be92af04af3843b2.html": "7852908fc0162c4634373f1dc015474e2f2bfb7e28b90e71be92af04af3843b2",
         "db82ed2ba0f3a092184fb7dccb4a00a02af17c2ae816e1c0313951b273942d50.html": "db82ed2ba0f3a092184fb7dccb4a00a02af17c2ae816e1c0313951b273942d50",
         "004d0239a04a8350b9f3584c54d5df5c4c8156d9004b6e399d45b833887465e2.html": "004d0239a04a8350b9f3584c54d5df5c4c8156d9004b6e399d45b833887465e2",
         "769c94c489a93e73f1215b90a6d96bd1a2710973e90a7e60d540e3b03cd2188d.html": "769c94c489a93e73f1215b90a6d96bd1a2710973e90a7e60d540e3b03cd2188d",

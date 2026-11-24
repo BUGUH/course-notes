@@ -340,6 +340,8 @@ def make(docs,catalog,previews):
         (docs/"tags"/(label+".html")).write_text(document(label,content,"../"),encoding="utf8")
     (docs/"tags.html").write_text(document("概念标签",tag_index+"</div>"),encoding="utf8")
     search_data=[dict(id=row["id"],sha256=row["sha256"],pdf_reader=not bool(row.get("web_reading")),
+                     page_anchors=sorted(set(fragments.get(row["id"],{}).get("page_anchors",[])+
+                         [alias["page"] for alias in meta.get(row["id"],{}).get("chapter_aliases",[])])) if row.get("web_reading") else [],
                      pages=discovery[row["id"]]["pages"])
                  for row in rows if row["id"] in discovery]
     (docs/"search-index.json").write_text(json.dumps(search_data,ensure_ascii=False,separators=(",",":")),encoding="utf8")

@@ -13,7 +13,18 @@
   display: block;
   max-width: 100%;
   overflow-x: auto;
+  overflow-y: hidden;
 }
+
+.prose .math.display > math[display=block] {
+  width: max-content;
+  min-width: 100%;
+  max-width: none;
+  overflow: visible;
+}
+
+.prose pre{background:var(--soft);border:1px solid var(--line);border-radius:.5rem;padding:1rem;font:.88rem/1.7 ui-monospace,Consolas,monospace}
+.source-butcher-table{border-collapse:collapse}.source-butcher-table > mtr > mtd:first-child{border-right:1px solid currentColor}.source-butcher-table > mtr:nth-child(2)>mtd{border-bottom:1px solid currentColor}
 
 h1 {
   text-wrap: balance;

@@ -299,5 +299,99 @@
         "level": 1
       }
     ]
+  },
+  "ad5e0b081611e67967c4": {
+    "source_sha256": "a8f74e59ccc3f27b2bfb55b8effbb31c994bb6630635fbdac89d16fc16e3da78",
+    "digest": "badabf7e7ea8c8b3c00e214700850293e0dde3f75c65c9812003195a4b09f2ef",
+    "headings": [
+      {
+        "id": "section",
+        "name": "2.4",
+        "level": 1
+      },
+      {
+        "id": "section-1",
+        "name": "2.5*",
+        "level": 1
+      },
+      {
+        "id": "section-2",
+        "name": "3.",
+        "level": 1
+      },
+      {
+        "id": "section-3",
+        "name": "4.",
+        "level": 1
+      },
+      {
+        "id": "section-4",
+        "name": "5.",
+        "level": 1
+      },
+      {
+        "id": "section-5",
+        "name": "6.",
+        "level": 1
+      }
+    ],
+    "page_anchors": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_ruled_tables": 2
+  },
+  "aef3eb03334733878679": {
+    "source_sha256": "d0d95e6f0bdd88a15148d3788b69767f81d456ccb3ed3ba7ea1c7c72ff824e0d",
+    "digest": "7852908fc0162c4634373f1dc015474e2f2bfb7e28b90e71be92af04af3843b2",
+    "headings": [
+      {
+        "id": "section",
+        "name": "1.",
+        "level": 1
+      },
+      {
+        "id": "section-1",
+        "name": "2.",
+        "level": 1
+      },
+      {
+        "id": "section-2",
+        "name": "3.",
+        "level": 1
+      },
+      {
+        "id": "section-3",
+        "name": "4.",
+        "level": 1
+      },
+      {
+        "id": "section-4",
+        "name": "5.",
+        "level": 1
+      },
+      {
+        "id": "section-5",
+        "name": "6.",
+        "level": 1
+      },
+      {
+        "id": "section-6",
+        "name": "7.",
+        "level": 1
+      },
+      {
+        "id": "section-7",
+        "name": "8.",
+        "level": 1
+      }
+    ],
+    "page_anchors": [
+      1,
+      2,
+      3
+    ]
   }
 }
