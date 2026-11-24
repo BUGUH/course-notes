@@ -36,8 +36,8 @@ def homefilter(**kwargs):
 
 def document(title,body,root="",article=False):
     brand=f'<a class="brand" href="{root}index.html">BUGUH<span> / </span>学习笔记</a>'
-    nav=f'<nav class="mainnav" aria-label="站点导航"><a href="{root}index.html">资料库</a><a href="{root}courses.html">课程</a><a href="{root}series.html">系列</a><a href="{root}categories.html">分类</a><a href="{root}tags.html">标签</a></nav>'
-    tools=f'<div class="tools"><a class="search-link" href="{root}index.html#q" aria-label="搜索资料">⌕</a><button type="button" id="theme" aria-label="切换明暗主题" title="切换明暗主题">◐</button></div>'
+    nav=f'<nav class="mainnav" id="site-navigation" aria-label="站点导航"><a href="{root}index.html">资料库</a><a href="{root}courses.html">课程</a><a href="{root}series.html">系列</a><a href="{root}categories.html">分类</a><a href="{root}tags.html">标签</a></nav>'
+    tools=f'<div class="tools"><a class="search-link" href="{root}index.html#q" aria-label="搜索资料">⌕</a><button type="button" id="theme" aria-label="切换明暗主题" title="切换明暗主题">◐</button><button type="button" class="menu-toggle" id="menu-toggle" aria-label="展开站点导航" aria-expanded="false" aria-controls="site-navigation">☰</button></div>'
     header=f'<header class="site-head"><div class="head-inner">{brand}{nav}{tools}</div></header>'
     return f'<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><title>{esc(title)} · BUGUH 学习笔记</title><link rel="stylesheet" href="{root}style.css"><link rel="alternate" type="application/rss+xml" title="BUGUH 学习笔记" href="{root}feed.xml"><script src="{root}preferences.js"></script></head><body><a class="skip" href="#main">跳到正文</a>{header}<main id="main" class="shell">{body}</main><footer><span>BUGUH · 学习笔记</span><nav aria-label="更多入口"><a href="{root}archive.html">归档</a> · <a href="{root}feed.xml">RSS</a> · <a href="https://github.com/BUGUH/course-notes">GitHub</a></nav></footer></body></html>'
 

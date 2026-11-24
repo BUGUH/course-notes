@@ -8,13 +8,13 @@ for (const a of tocLinks) a.addEventListener('click', () => {
 });
 function highlight(id) {
   for (const a of tocLinks) {
-    if (a.hash === '#' + id) a.setAttribute('aria-current','location');
+    if (decodeURIComponent(a.hash.slice(1)) === id) a.setAttribute('aria-current','location');
     else a.removeAttribute('aria-current');
   }
 }
 const doc = document.querySelector('.facsimile');
 if (!doc) {
-  const headings = [...document.querySelectorAll('.prose :is(h2,h3,h4)[id], .prose section[id], #downloads')];
+  const headings = [...document.querySelectorAll('.prose :is(h2,h3,h4,h5,h6)[id], .prose section[id], #downloads')];
   const watch = new IntersectionObserver(entries => {
     for (const entry of entries) if (entry.isIntersecting) highlight(entry.target.id);
   },{rootMargin:'0px 0px -70% 0px'});
