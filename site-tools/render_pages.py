@@ -4,6 +4,8 @@ from html import escape
 from pathlib import Path
 import json
 import re
+import hashlib
+from urllib.parse import quote
 
 def esc(val):return escape(str(val),quote=True)
 def size(n):return f"{n/1_000_000:.2f} MB" if n>=1_000_000 else f"{max(1,round(n/1000))} KB"
@@ -29,20 +31,37 @@ def homefilter(**kwargs):
 
 def document(title,body,root="",article=False):
     brand=f'<a class="brand" href="{root}index.html">BUGUH<span> / </span>学习笔记</a>'
-    nav=f'<nav class="mainnav" aria-label="站点导航"><a href="{root}index.html">资料库</a><a href="{root}courses.html">课程</a><a href="{root}categories.html">分类</a></nav>'
+    nav=f'<nav class="mainnav" aria-label="站点导航"><a href="{root}index.html">资料库</a><a href="{root}courses.html">课程</a><a href="{root}categories.html">分类</a><a href="{root}tags.html">标签</a></nav>'
     tools=f'<div class="tools"><a class="search-link" href="{root}index.html#q" aria-label="搜索资料">⌕</a><button type="button" id="theme" aria-label="切换明暗主题" title="切换明暗主题">◐</button></div>'
     header=f'<header class="site-head"><div class="head-inner">{brand}{nav}{tools}</div></header>'
     return f'<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><title>{esc(title)} · BUGUH 学习笔记</title><link rel="stylesheet" href="{root}style.css"><script src="{root}preferences.js"></script></head><body><a class="skip" href="#main">跳到正文</a>{header}<main id="main" class="shell">{body}</main><footer><span>BUGUH · 学习笔记</span><a href="https://github.com/BUGUH/course-notes">GitHub</a></footer></body></html>'
 
 def linkrow(name,url,count):
     return f'<a class="listlink" href="{esc(url)}"><span>{esc(name)}</span><small>{count} 份</small></a>'
+
+def topic_url(label):
+    return "tags/"+quote(label,safe="")+".html"
+
+def load_discovery(rows):
+    path=Path(__file__).with_name("discovery-content.json")
+    if not path.exists():return {}
+    data=json.loads(path.read_text(encoding="utf8"))
+    catalogue=Path(__file__).resolve().parent.parent/"catalog.json"
+    if hashlib.sha256(catalogue.read_bytes()).hexdigest()!=data["catalog_sha256"]:
+        raise ValueError("Rebuild discovery data for the current catalogue")
+    documents=data["documents"]
+    if set(documents)!={r["id"] for r in rows}:raise ValueError("Discovery scope mismatch")
+    for row in rows:
+        if documents[row["id"]]["pdf_sha256"]!=row["sha256"]:
+            raise ValueError("Discovery content belongs to another PDF edition")
+    return documents
 def series_order(rows):
     # Use the numbers in the author's own assignment or chapter titles when present.
     def key(row):
         t=row["title"];m=re.search(r"(?:hw\s*|作业\s*|第\s*)(\d+)",t,re.I)
         return (0,int(m[1])) if m else (1,0)
     return sorted(rows,key=key)
-def article(docs,r,group,previews,meta,fragment):
+def article(docs,r,group,previews,meta,fragment,discovery=None):
     rid=r["id"];course=r["course"];s=subjects.get(course,"应用与专题")
     pos=next(i for i,v in enumerate(group) if v["id"]==rid)
     base="../";pdf=previews.get(rid) or (r["url"] if r["format"]=="PDF" else None)
@@ -51,6 +70,8 @@ def article(docs,r,group,previews,meta,fragment):
     pages=(t["pages"] if t else r["pages"]) or 1
     back=f'<a class="back" href="../index.html">返回资料列表</a>'
     badges="".join(f'<a class="tag" href="../{esc(homefilter(**{key:value}))}">{esc(value)}</a>' for key,value in (("subject",s),("course",course)))
+    badges+="".join(f'<a class="tag concept" href="../{topic_url(label)}">{esc(label)}</a>'
+                    for label in (discovery or {}).get("tags",[]))
     term=esc(r.get("term") or "")
     top=f'<div class="pubmeta"><a href="../{esc(homefilter(type=r["type"]))}">{esc(r["type"])}</a>{("<span>"+term+"</span>") if term else ""}<span>{pages} 页</span></div><h1>{esc(r["title"])}</h1><div class="tags">{badges}</div>'
     course_url="../"+homefilter(course=course)
@@ -105,6 +126,10 @@ def article(docs,r,group,previews,meta,fragment):
 
 def make(docs,catalog,previews):
     rows=catalog["items"];groups=defaultdict(list);types=defaultdict(list);by_subject=defaultdict(list)
+    discovery=load_discovery(rows)
+    topics=defaultdict(list)
+    for row in rows:
+        for label in discovery.get(row["id"],{}).get("tags",[]):topics[label].append(row)
     for r in rows:
         groups[r["course"]].append(r);types[r["type"]].append(r);by_subject[subjects.get(r["course"],"应用与专题")].append(r)
     for c in groups:groups[c]=series_order(groups[c])
@@ -116,8 +141,8 @@ def make(docs,catalog,previews):
     formats=sorted({r["format"] for r in rows})
     if any("transcription" in r or r.get("corrected") or r.get("typeset_source_sha256") for r in rows):formats.append("已校对的 LaTeX 排版稿")
     body=f'<section class="index-title"><h1>课程笔记</h1><p>{len(groups)} 门课程及专题 · {len(rows)} 份资料</p></section>'
-    body+='<div class="filters"><label>搜索<input type="search" id="q" placeholder="题名、课程或关键词"></label>'
-    for f,name,values in (("subject","学科",by_subject),("course","课程",groups),("type","资料类型",types),("fmt","格式或版本",formats)):
+    body+='<div class="filters"><label>搜索<input type="search" id="q" placeholder="搜索题名、课程和正文"></label>'
+    for f,name,values in (("subject","学科",by_subject),("course","课程",groups),("type","资料类型",types),("fmt","格式或版本",formats),("tag","概念标签",topics)):
         body+=f'<label>{name}<select id="{f}"><option value="">全部</option>{opts(sorted(values))}</select></label>'
     body+='</div><p id="count" class="summary" aria-live="polite"></p><p id="empty" hidden>没有匹配的资料。</p>'
     for c,group in groups.items():
@@ -130,7 +155,8 @@ def make(docs,catalog,previews):
                 editions.extend(v for v in ("PDF","已校对的 LaTeX 排版稿") if v not in editions)
             byline=" · ".join(filter(None,[r.get("term"),r["type"],"订正版" if r.get("corrected") else "已校排版" if r.get("transcription") else None]))
             key=" ".join([c,subject,r["title"],byline,*editions]).lower()
-            body+=f'<div class="entry" data-subject="{esc(subject)}" data-course="{esc(c)}" data-type="{esc(r["type"])}" data-fmt="{esc(fmt)}" data-editions="{esc("|".join(editions))}" data-search="{esc(key)}"><div><a class="title" href="articles/{rid}.html">{esc(r["title"])}</a><div class="sub">{esc(byline)}</div></div><small>{esc(fmt)} · {size(r["bytes"])}</small></div>'
+            tags=discovery.get(rid,{}).get("tags",[])
+            body+=f'<div class="entry" data-id="{rid}" data-sha="{esc(r["sha256"])}" data-tags="{esc("|".join(tags))}" data-subject="{esc(subject)}" data-course="{esc(c)}" data-type="{esc(r["type"])}" data-fmt="{esc(fmt)}" data-editions="{esc("|".join(editions))}" data-search="{esc(key)}"><div><a class="title" href="articles/{rid}.html">{esc(r["title"])}</a><div class="sub">{esc(byline)}</div><div class="search-excerpt" hidden></div></div><small>{esc(fmt)} · {size(r["bytes"])}</small></div>'
             fragment=fragments.get(rid)
             expected=r.get("typeset_source_sha256") or r.get("transcription",{}).get("source",r["url"]).rsplit("/",1)[-1].split(".")[0]
             if fragment and fragment["source_sha256"]==expected and r.get("web_reading")=="files/"+fragment["digest"]+".html":
@@ -139,7 +165,7 @@ def make(docs,catalog,previews):
                 if hashlib.sha256(raw).hexdigest()!=fragment["digest"]:raise ValueError("Web edition digest mismatch")
                 fragment=dict(fragment,html=raw.decode("utf-8"))
             else:fragment=None
-            article(docs,r,group,previews,meta,fragment)
+            article(docs,r,group,previews,meta,fragment,discovery.get(rid))
         body+='</section>'
     (docs/"index.html").write_text(document("课程笔记",body+'<script defer src="index.js"></script>'),encoding="utf8")
     courses='<section class="index-title"><h1>课程</h1></section>'
@@ -151,4 +177,17 @@ def make(docs,catalog,previews):
     for title,values,key in (("按资料类型",types,"type"),("按学科",by_subject,"subject")):
         categories+=f'<section class="course"><h2>{title}</h2><div class="linkgrid">'+''.join(linkrow(v,homefilter(**{key:v}),len(values[v])) for v in sorted(values))+'</div></section>'
     (docs/"categories.html").write_text(document("分类",categories),encoding="utf8")
+    tag_index='<section class="index-title"><h1>概念标签</h1><p>按笔记和作业正文中出现的概念查找资料。</p></section><div class="linkgrid">'
+    (docs/"tags").mkdir(exist_ok=True)
+    for label,documents in sorted(topics.items()):
+        tag_index+=linkrow(label,topic_url(label),len(documents))
+        content=f'<a class="back" href="../tags.html">返回概念标签</a><section class="index-title"><h1>{esc(label)}</h1><p>{len(documents)} 份资料</p></section>'
+        for row in documents:
+            content+=f'<a class="listlink" href="../articles/{row["id"]}.html"><span>{esc(row["title"])}</span><small>{esc(row["course"])} · {esc(row["type"])}</small></a>'
+        (docs/"tags"/(label+".html")).write_text(document(label,content,"../"),encoding="utf8")
+    (docs/"tags.html").write_text(document("概念标签",tag_index+"</div>"),encoding="utf8")
+    search_data=[dict(id=row["id"],sha256=row["sha256"],pdf_reader=not bool(row.get("web_reading")),
+                     pages=discovery[row["id"]]["pages"])
+                 for row in rows if row["id"] in discovery]
+    (docs/"search-index.json").write_text(json.dumps(search_data,ensure_ascii=False,separators=(",",":")),encoding="utf8")
 

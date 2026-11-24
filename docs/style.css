@@ -39,3 +39,8 @@ h1 {
   overflow-x: auto;
   vertical-align: middle;
 }
+
+/* Concept discovery and full-text results. */
+.filters{grid-template-columns:repeat(5,minmax(0,1fr))}.filters label:first-child{grid-column:1/-1}.search-excerpt{font-size:.88rem;line-height:1.65;color:var(--muted);margin:.45rem 0 .15rem;max-width:64ch;overflow-wrap:anywhere}.concept{background:var(--teal-bg)}
+@media(max-width:850px){.filters{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.head-inner{flex-wrap:wrap;padding-top:.45rem;padding-bottom:.45rem}.mainnav{order:3;width:100%;justify-content:center}.linkgrid .listlink{min-width:0;overflow-wrap:anywhere}}
