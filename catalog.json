@@ -226,19 +226,6 @@
       "reviewed": true
     },
     {
-      "id": "8df74655ec8aa4ddd36a",
-      "title": "概念定理",
-      "course": "近世代数",
-      "term": "大二下",
-      "type": "笔记",
-      "format": "PDF",
-      "ext": ".pdf",
-      "bytes": 14691004,
-      "pages": 78,
-      "sha256": "5e419277e4d966bdb0104aab46b6b4c8a26620a9e6b6602aa4ee5d72dcb63e9e",
-      "url": "files/5e419277e4d966bdb0104aab46b6b4c8a26620a9e6b6602aa4ee5d72dcb63e9e.pdf"
-    },
-    {
       "id": "b4255c39e113ceb9f24b",
       "title": "微分几何背诵！",
       "course": "微分几何",
@@ -1120,13 +1107,6 @@
     }
   ],
   "packs": [
-    {
-      "name": "notes-91bf5c878e874c93.zip",
-      "sha": "91bf5c878e874c9333eb16fd032662d19d41d2ed1b053e25ab15da568928dbe3",
-      "members": {
-        "5e419277e4d966bdb0104aab46b6b4c8a26620a9e6b6602aa4ee5d72dcb63e9e.pdf": "5e419277e4d966bdb0104aab46b6b4c8a26620a9e6b6602aa4ee5d72dcb63e9e"
-      }
-    },
     {
       "name": "notes-748a2f2f85404174.zip",
       "sha": "748a2f2f85404174e08f83b9e1b59fb16f4ecab823cfd151c2434cf167fc6c62",
