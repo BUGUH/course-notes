@@ -269,19 +269,6 @@
       "reviewed": true
     },
     {
-      "id": "e37c4ff5264af4705962",
-      "title": "作业",
-      "course": "常微分方程",
-      "term": "大二上",
-      "type": "作业",
-      "format": "PDF",
-      "ext": ".pdf",
-      "bytes": 12204011,
-      "pages": 52,
-      "sha256": "52e0cc3de4b10c77eff4ee0f6fac23151ff52ac37f70771aac3133d990c71081",
-      "url": "files/52e0cc3de4b10c77eff4ee0f6fac23151ff52ac37f70771aac3133d990c71081.pdf"
-    },
-    {
       "id": "cc91566167cbc5dac29c",
       "title": "课堂笔记（手写选页）",
       "course": "常微分方程",
@@ -1146,13 +1133,6 @@
     }
   ],
   "packs": [
-    {
-      "name": "notes-3131df6c66cb39c9.zip",
-      "sha": "3131df6c66cb39c9377c15db3fa4d22f6c3fc9509e96ed65ff5ed5b3fb429edf",
-      "members": {
-        "52e0cc3de4b10c77eff4ee0f6fac23151ff52ac37f70771aac3133d990c71081.pdf": "52e0cc3de4b10c77eff4ee0f6fac23151ff52ac37f70771aac3133d990c71081"
-      }
-    },
     {
       "name": "notes-91bf5c878e874c93.zip",
       "sha": "91bf5c878e874c9333eb16fd032662d19d41d2ed1b053e25ab15da568928dbe3",
